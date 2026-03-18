@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>リンゴラボ（仮） - 整う生活は、置くだけで始まる</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-noto bg-off-white text-dark-gray">
+
+    <!-- ナビゲーション -->
+    <nav class="bg-white shadow-sm fixed w-full z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-brown">🍎 リンゴラボ</div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#" class="text-dark-gray hover:text-muted-red transition">記事</a>
+                <a href="#" class="text-dark-gray hover:text-muted-red transition">商品</a>
+                <a href="#profile" class="text-dark-gray hover:text-muted-red transition">プロフィール</a>
+                <a href="#articles" class="btn-primary">記事を読む</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ヒーローエリア -->
+    <section class="hero-section pt-32 pb-20 bg-gradient-to-br from-cream to-off-white">
+        <div class="container mx-auto px-6 text-center">
+            <!-- メインビジュアル -->
+            <div class="mb-8">
+                <div class="inline-block text-9xl">🍎</div>
+            </div>
+
+            <!-- ヘッドライン -->
+            <h1 class="text-5xl md:text-6xl font-bold text-brown mb-6 leading-tight">
+                整う生活は、<br>置くだけで始まる
+            </h1>
+
+            <!-- サブヘッドライン -->
+            <p class="text-xl md:text-2xl text-dark-gray mb-10 max-w-2xl mx-auto">
+                管理栄養士りんちゃんが教える、<br>1日1個のりんご習慣
+            </p>
+
+            <!-- プライマリーCTA -->
+            <a href="#articles" class="btn-primary-large">
+                りんちゃんの記事を読む →
+            </a>
+
+            <!-- セカンダリーCTA -->
+            <div class="mt-6">
+                <a href="#profile" class="text-brown underline hover:text-muted-red transition">
+                    りんちゃんって？
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 信頼性・社会的証明 -->
+    <section class="py-16 bg-cream">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <!-- 管理栄養士バッジ -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm">
+                    <div class="text-4xl mb-4">🎓</div>
+                    <h3 class="text-lg font-bold text-brown mb-2">国家資格</h3>
+                    <p class="text-dark-gray">管理栄養士</p>
+                </div>
+
+                <!-- 実績1 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm">
+                    <div class="text-4xl mb-4">📊</div>
+                    <h3 class="text-lg font-bold text-brown mb-2">3,000人以上</h3>
+                    <p class="text-dark-gray">食事指導実績</p>
+                </div>
+
+                <!-- 実績2 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm">
+                    <div class="text-4xl mb-4">📖</div>
+                    <h3 class="text-lg font-bold text-brown mb-2">100本以上</h3>
+                    <p class="text-dark-gray">栄養記事執筆</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ブランドコンセプト -->
+    <section class="py-20 bg-off-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-brown text-center mb-6">
+                こんなお悩み、ありませんか？
+            </h2>
+
+            <div class="max-w-2xl mx-auto mb-12">
+                <div class="space-y-4">
+                    <div class="flex items-center">
+                        <span class="text-muted-red text-2xl mr-4">✓</span>
+                        <p class="text-lg text-dark-gray">毎日忙しくて、自分の時間がない</p>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="text-muted-red text-2xl mr-4">✓</span>
+                        <p class="text-lg text-dark-gray">冷え・むくみ・肌荒れが気になる</p>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="text-muted-red text-2xl mr-4">✓</span>
+                        <p class="text-lg text-dark-gray">丁寧な暮らしに憧れるけど続かない</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mb-12">
+                <h3 class="text-3xl font-bold text-brown mb-6">
+                    りんちゃんが提案するのは、<br>「頑張らない」温活習慣
+                </h3>
+            </div>
+
+            <div class="max-w-3xl mx-auto text-center">
+                <div class="text-6xl mb-6">🍎</div>
+                <p class="text-lg text-dark-gray leading-relaxed mb-4">
+                    りんごは、昔から「1日1個で医者いらず」と言われてきた果実。
+                </p>
+                <p class="text-lg text-dark-gray leading-relaxed mb-4">
+                    特別なことではなく、日々の生活の中に、1日1個。<br>
+                    自分のからだと向き合う小さな習慣。
+                </p>
+                <p class="text-lg text-dark-gray leading-relaxed">
+                    食べること、整えること、休むこと。<br>
+                    その積み重ねが、未来の自分をつくっていく。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3つの特徴 -->
+    <section class="py-20 bg-cream">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-brown text-center mb-16">
+                りんちゃんが大切にすること
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- カード1 -->
+                <div class="card-feature">
+                    <div class="text-6xl mb-6">🍎</div>
+                    <h3 class="text-2xl font-bold text-brown mb-4">整える</h3>
+                    <p class="text-dark-gray mb-6">
+                        体を整える習慣。<br>
+                        無理なく続けられる、<br>
+                        日々の小さな積み重ね。
+                    </p>
+                    <a href="#" class="text-muted-red hover:underline">→ 詳しく</a>
+                </div>
+
+                <!-- カード2 -->
+                <div class="card-feature">
+                    <div class="text-6xl mb-6">🌿</div>
+                    <h3 class="text-2xl font-bold text-brown mb-4">巡る</h3>
+                    <p class="text-dark-gray mb-6">
+                        血流・代謝を良く。<br>
+                        温活で体の巡りを<br>
+                        整えましょう。
+                    </p>
+                    <a href="#" class="text-muted-red hover:underline">→ 詳しく</a>
+                </div>
+
+                <!-- カード3 -->
+                <div class="card-feature">
+                    <div class="text-6xl mb-6">📖</div>
+                    <h3 class="text-2xl font-bold text-brown mb-4">学ぶ</h3>
+                    <p class="text-dark-gray mb-6">
+                        管理栄養士の知識。<br>
+                        エビデンスに基づいた<br>
+                        正しい情報をお届け。
+                    </p>
+                    <a href="#" class="text-muted-red hover:underline">→ 詳しく</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 管理栄養士プロフィール -->
+    <section id="profile" class="py-20 bg-gradient-to-br from-muted-red/10 to-cream">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <!-- イラスト -->
+                    <div class="text-center">
+                        <div class="text-9xl">👩‍⚕️</div>
+                        <p class="text-sm text-dark-gray mt-4">※ イラストはデザイナー作成予定</p>
+                    </div>
+
+                    <!-- プロフィール -->
+                    <div class="bg-off-white rounded-2xl p-8">
+                        <h3 class="text-3xl font-bold text-brown mb-4">管理栄養士<br>りんちゃん</h3>
+                        <p class="text-lg text-muted-red mb-6">温活・美容栄養の専門家</p>
+                        <p class="text-dark-gray leading-relaxed mb-6">
+                            「私自身、冷え性で悩んでいました。温活と食事改善で体が変わった経験から、同じ悩みを持つ方に伝えたい。」
+                        </p>
+                        <a href="#" class="text-muted-red hover:underline font-medium">
+                            → プロフィール詳細
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 記事一覧 -->
+    <section id="articles" class="py-20 bg-off-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-brown text-center mb-12">
+                りんちゃんの記事
+            </h2>
+
+            <!-- カテゴリータブ -->
+            <div class="flex justify-center space-x-4 mb-12">
+                <button class="tab-button active">すべて</button>
+                <button class="tab-button">温活</button>
+                <button class="tab-button">美容</button>
+                <button class="tab-button">食事</button>
+            </div>
+
+            <!-- 記事カード -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <!-- 記事カード1 -->
+                <div class="article-card">
+                    <div class="aspect-video bg-cream rounded-xl mb-4 flex items-center justify-center text-6xl">
+                        🍎
+                    </div>
+                    <span class="inline-block bg-muted-red text-white text-xs px-3 py-1 rounded-full mb-2">温活</span>
+                    <h3 class="text-xl font-bold text-brown mb-2 line-clamp-2">
+                        冷え性改善！管理栄養士が教える温活習慣5選
+                    </h3>
+                    <p class="text-sm text-dark-gray mb-4">3分で読める</p>
+                </div>
+
+                <!-- 記事カード2 -->
+                <div class="article-card">
+                    <div class="aspect-video bg-cream rounded-xl mb-4 flex items-center justify-center text-6xl">
+                        🌿
+                    </div>
+                    <span class="inline-block bg-muted-red text-white text-xs px-3 py-1 rounded-full mb-2">美容</span>
+                    <h3 class="text-xl font-bold text-brown mb-2 line-clamp-2">
+                        肌荒れの原因は冷え？インナーケアで美肌を手に入れる
+                    </h3>
+                    <p class="text-sm text-dark-gray mb-4">5分で読める</p>
+                </div>
+
+                <!-- 記事カード3 -->
+                <div class="article-card">
+                    <div class="aspect-video bg-cream rounded-xl mb-4 flex items-center justify-center text-6xl">
+                        🍵
+                    </div>
+                    <span class="inline-block bg-muted-red text-white text-xs px-3 py-1 rounded-full mb-2">食事</span>
+                    <h3 class="text-xl font-bold text-brown mb-2 line-clamp-2">
+                        体を温める食材10選｜管理栄養士のおすすめレシピ
+                    </h3>
+                    <p class="text-sm text-dark-gray mb-4">7分で読める</p>
+                </div>
+            </div>
+
+            <!-- もっと見る -->
+            <div class="text-center">
+                <a href="#" class="btn-primary">
+                    もっと見る →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 最終CTA -->
+    <section class="py-20 bg-cream">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold text-brown mb-8">
+                整える習慣、今日から始めよう
+            </h2>
+
+            <a href="#articles" class="btn-primary-large">
+                りんちゃんの記事を読む →
+            </a>
+
+            <div class="flex justify-center items-center space-x-6 mt-8 text-sm text-dark-gray">
+                <div class="flex items-center">
+                    <span class="text-muted-red mr-2">✓</span>
+                    管理栄養士監修
+                </div>
+                <div class="flex items-center">
+                    <span class="text-muted-red mr-2">✓</span>
+                    温活・美容
+                </div>
+                <div class="flex items-center">
+                    <span class="text-muted-red mr-2">✓</span>
+                    無料
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="bg-brown text-off-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">🍎 リンゴラボ（仮）</h3>
+                    <p class="text-sm opacity-80">
+                        管理栄養士りんちゃんが教える、<br>
+                        整える習慣
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">カテゴリー</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-muted-red transition">温活</a></li>
+                        <li><a href="#" class="hover:text-muted-red transition">美容</a></li>
+                        <li><a href="#" class="hover:text-muted-red transition">食事</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">その他</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-muted-red transition">プロフィール</a></li>
+                        <li><a href="#" class="hover:text-muted-red transition">プライバシーポリシー</a></li>
+                        <li><a href="#" class="hover:text-muted-red transition">お問い合わせ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center text-sm opacity-60 pt-8 border-t border-off-white/20">
+                © 2026 Studio Jinsei. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
