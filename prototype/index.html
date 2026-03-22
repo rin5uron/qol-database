@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="bg-off-white text-dark-gray">
@@ -17,25 +17,24 @@
     <nav class="bg-white shadow-sm fixed w-full z-50">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="index.html" class="flex items-center gap-2" aria-label="リンゴラボ トップページへ">
-                <span class="text-muted-red text-3xl" aria-hidden="true"><i class="fa-solid fa-apple-whole"></i></span>
-                <img src="images/logo.svg" alt="リンゴラボ ロゴ" class="h-10 hidden sm:block" />
+                <img src="images/logo.svg" alt="リンゴラボ ロゴ" class="h-10" />
             </a>
 
             <div class="hidden md:flex space-x-6 items-center text-sm font-medium">
-                <a href="#about" class="text-dark-gray hover:text-muted-red transition" aria-label="コンセプトへ">コンセプト</a>
+                <a href="#about" class="text-dark-gray hover:text-muted-red transition" aria-label="リンゴラボについて">リンゴラボについて</a>
                 <a href="product-tea.html" class="text-dark-gray hover:text-muted-red transition" aria-label="商品">商品</a>
                 <a href="app-health.html" class="text-dark-gray hover:text-muted-red transition" aria-label="アプリ">アプリ</a>
                 <a href="#articles" class="btn-primary" aria-label="記事を読む">記事を読む</a>
             </div>
 
             <button id="mobile-menu-button" class="md:hidden text-2xl text-dark-gray" aria-label="メニューを開く" aria-expanded="false">
-                <i class="fa-solid fa-bars"></i>
+                ☰
             </button>
         </div>
 
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
             <div class="container mx-auto px-6 py-4 flex flex-col space-y-4">
-                <a href="#about" class="text-dark-gray hover:text-muted-red transition" aria-label="コンセプトへ">コンセプト</a>
+                <a href="#about" class="text-dark-gray hover:text-muted-red transition" aria-label="リンゴラボについて">リンゴラボについて</a>
                 <a href="product-tea.html" class="text-dark-gray hover:text-muted-red transition" aria-label="商品">商品</a>
                 <a href="app-health.html" class="text-dark-gray hover:text-muted-red transition" aria-label="アプリ">アプリ</a>
                 <a href="#articles" class="btn-primary text-center" aria-label="記事を読む">記事を読む</a>
@@ -46,9 +45,6 @@
     <!-- ヒーロー -->
     <section class="hero-section pt-32 pb-16 bg-gradient-to-br from-cream to-off-white">
         <div class="max-w-3xl mx-auto px-6 text-center">
-            <div class="mb-8 text-muted-red" aria-hidden="true">
-                <i class="fa-solid fa-apple-whole text-7xl md:text-8xl"></i>
-            </div>
             <h1 class="text-4xl md:text-5xl font-bold text-brown mb-6 leading-tight">
                 整う生活は、<br>置くだけで始まる
             </h1>
@@ -56,11 +52,11 @@
                 管理栄養士りんちゃんが届ける、<br class="hidden sm:inline">1日1個のりんご習慣と、温活・美容のヒントです。
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-stretch sm:items-center">
-                <a href="#articles" class="btn-primary-large sm:min-w-[200px]">
-                    <i class="fa-solid fa-book-open mr-2" aria-hidden="true"></i>記事を読む
+                <a href="#about" class="btn-primary-large sm:min-w-[200px]">
+                    リンゴラボについて
                 </a>
-                <a href="#services" class="btn-outline-large sm:min-w-[200px]">
-                    <i class="fa-solid fa-layer-group mr-2" aria-hidden="true"></i>やっていること
+                <a href="#articles" class="btn-primary-large sm:min-w-[200px]">
+                    記事を読む
                 </a>
             </div>
             <p class="mt-8">
@@ -74,22 +70,22 @@
     
 
     <!-- コンセプト -->
-    <section id="about" class="py-16 bg-off-white section-divider-top">
+    <section id="about" class="py-16 bg-off-white landing-band landing-band--a">
         <div class="max-w-3xl mx-auto px-6">
             <h2 class="text-3xl md:text-4xl font-bold text-brown text-center mb-8">
                 こんなお悩み、ありませんか？
             </h2>
             <div class="space-y-4 mb-12">
                 <div class="flex items-start gap-3">
-                    <span class="text-muted-red text-xl mt-0.5 shrink-0" aria-hidden="true"><i class="fa-solid fa-circle-check"></i></span>
+                    <span class="text-muted-red text-xl mt-0.5 shrink-0" aria-hidden="true">✓</span>
                     <p class="text-lg text-dark-gray">毎日忙しくて、自分の時間がない</p>
                 </div>
                 <div class="flex items-start gap-3">
-                    <span class="text-muted-red text-xl mt-0.5 shrink-0" aria-hidden="true"><i class="fa-solid fa-circle-check"></i></span>
+                    <span class="text-muted-red text-xl mt-0.5 shrink-0" aria-hidden="true">✓</span>
                     <p class="text-lg text-dark-gray">冷え・むくみ・肌荒れが気になる</p>
                 </div>
                 <div class="flex items-start gap-3">
-                    <span class="text-muted-red text-xl mt-0.5 shrink-0" aria-hidden="true"><i class="fa-solid fa-circle-check"></i></span>
+                    <span class="text-muted-red text-xl mt-0.5 shrink-0" aria-hidden="true">✓</span>
                     <p class="text-lg text-dark-gray">丁寧な暮らしに憧れるけど続かない</p>
                 </div>
             </div>
@@ -97,9 +93,6 @@
                 りんちゃんが提案するのは、<br>「頑張らない」温活習慣
             </h3>
             <div class="text-center">
-                <div class="text-5xl mb-6 text-muted-red" aria-hidden="true">
-                    <i class="fa-solid fa-seedling"></i>
-                </div>
                 <p class="text-lg text-dark-gray leading-relaxed mb-4">
                     りんごは、昔から「1日1個で医者いらず」と言われてきた果実。特別なことではなく、日々の中に1日1個。自分のからだと向き合う小さな習慣が、未来の自分をつくっていきます。
                 </p>
@@ -108,45 +101,30 @@
     </section>
 
     <!-- やっていること -->
-    <section id="services" class="py-16 bg-cream section-divider-top">
+    <section id="services" class="py-16 bg-white landing-band landing-band--b">
         <div class="max-w-3xl mx-auto px-6">
             <h2 class="text-3xl md:text-4xl font-bold text-brown text-center mb-4">リンゴラボのこと</h2>
             <p class="text-center text-dark-gray mb-12 text-sm md:text-base">記事・自社商品・アプリの3つを軸に、整えるヒントを届けています。</p>
             <div class="space-y-6">
                 <article class="card-feature text-left">
-                    <div class="flex items-start gap-4">
-                        <div class="icon text-muted-red shrink-0 !mb-0 !text-4xl" aria-hidden="true">
-                            <i class="fa-solid fa-pen-to-square"></i>
-                        </div>
-                        <div class="flex-1 min-w-0">
-                            <h3 class="text-xl font-bold text-brown mb-2">記事発信</h3>
-                            <p class="text-dark-gray text-sm md:text-base leading-relaxed mb-4">温活・美容・食事を、管理栄養士の視点とエビデンスをまじえて解説します。</p>
-                            <a href="#articles" class="text-muted-red hover:underline font-medium text-sm">記事一覧へ <i class="fa-solid fa-arrow-right text-xs ml-1" aria-hidden="true"></i></a>
-                        </div>
+                    <div class="flex-1 min-w-0">
+                        <h3 class="text-xl font-bold text-brown mb-2">記事発信</h3>
+                        <p class="text-dark-gray text-sm md:text-base leading-relaxed mb-4">温活・美容・食事を、管理栄養士の視点とエビデンスをまじえて解説します。</p>
+                        <a href="#articles" class="text-muted-red hover:underline font-medium text-sm">記事一覧へ →</a>
                     </div>
                 </article>
                 <article class="card-feature text-left">
-                    <div class="flex items-start gap-4">
-                        <div class="icon text-muted-red shrink-0 !mb-0 !text-4xl" aria-hidden="true">
-                            <i class="fa-solid fa-mug-hot"></i>
-                        </div>
-                        <div class="flex-1 min-w-0">
-                            <h3 class="text-xl font-bold text-brown mb-2">自社商品</h3>
-                            <p class="text-dark-gray text-sm md:text-base leading-relaxed mb-4">りんごを楽しむ習慣をサポートする、りんごティーなどを企画・販売しています。</p>
-                            <a href="product-tea.html" class="text-muted-red hover:underline font-medium text-sm">商品ページへ <i class="fa-solid fa-arrow-right text-xs ml-1" aria-hidden="true"></i></a>
-                        </div>
+                    <div class="flex-1 min-w-0">
+                        <h3 class="text-xl font-bold text-brown mb-2">自社商品</h3>
+                        <p class="text-dark-gray text-sm md:text-base leading-relaxed mb-4">りんごを楽しむ習慣をサポートする、りんごティーなどを企画・販売しています。</p>
+                        <a href="product-tea.html" class="text-muted-red hover:underline font-medium text-sm">商品ページへ →</a>
                     </div>
                 </article>
                 <article class="card-feature text-left">
-                    <div class="flex items-start gap-4">
-                        <div class="icon text-muted-red shrink-0 !mb-0 !text-4xl" aria-hidden="true">
-                            <i class="fa-solid fa-mobile-screen-button"></i>
-                        </div>
-                        <div class="flex-1 min-w-0">
-                            <h3 class="text-xl font-bold text-brown mb-2">アプリ開発</h3>
-                            <p class="text-dark-gray text-sm md:text-base leading-relaxed mb-4">体調や習慣を無理なく記録できるアプリを開発中です（プロトタイプ公開）。</p>
-                            <a href="app-health.html" class="text-muted-red hover:underline font-medium text-sm">アプリページへ <i class="fa-solid fa-arrow-right text-xs ml-1" aria-hidden="true"></i></a>
-                        </div>
+                    <div class="flex-1 min-w-0">
+                        <h3 class="text-xl font-bold text-brown mb-2">アプリ開発</h3>
+                        <p class="text-dark-gray text-sm md:text-base leading-relaxed mb-4">体調や習慣を無理なく記録できるアプリを開発中です（プロトタイプ公開）。</p>
+                        <a href="app-health.html" class="text-muted-red hover:underline font-medium text-sm">アプリページへ →</a>
                     </div>
                 </article>
             </div>
@@ -154,16 +132,13 @@
     </section>
 
     <!-- 記事 -->
-    <section id="articles" class="py-16 bg-off-white section-divider-top">
+    <section id="articles" class="py-16 bg-off-white landing-band landing-band--a section-articles-stack">
         <div class="max-w-3xl mx-auto px-6">
             <h2 class="text-3xl md:text-4xl font-bold text-brown text-center mb-4">記事</h2>
             <p class="text-center text-dark-gray mb-10 text-sm md:text-base">体験とエビデンスをまじえたレビュー・解説です。</p>
             <div class="space-y-6 mb-10">
                 <article class="article-card">
                     <a href="article-lava-review.html" aria-label="ホットヨガLAVAの記事を読む">
-                        <div class="thumbnail thumbnail-icon" aria-hidden="true">
-                            <i class="fa-solid fa-fire"></i>
-                        </div>
                         <span class="badge">温活</span>
                         <h3 class="!text-lg md:!text-xl">ホットヨガLAVAで冷え性は改善できる？管理栄養士が栄養学的に分析</h3>
                         <p class="read-time">読了の目安：約8分</p>
@@ -171,9 +146,6 @@
                 </article>
                 <article class="article-card">
                     <a href="article-yomogi-review.html" aria-label="よもぎ蒸しの記事を読む">
-                        <div class="thumbnail thumbnail-icon" aria-hidden="true">
-                            <i class="fa-solid fa-spa"></i>
-                        </div>
                         <span class="badge">温活</span>
                         <h3 class="!text-lg md:!text-xl">よもぎ蒸しで冷え性・むくみは改善する？管理栄養士の体験レビュー</h3>
                         <p class="read-time">読了の目安：約10分</p>
@@ -181,9 +153,6 @@
                 </article>
                 <article class="article-card">
                     <a href="article-chef-tsukurioki.html" aria-label="無添つくりおきの記事を読む">
-                        <div class="thumbnail thumbnail-icon" aria-hidden="true">
-                            <i class="fa-solid fa-utensils"></i>
-                        </div>
                         <span class="badge">食事</span>
                         <h3 class="!text-lg md:!text-xl">シェフの無添つくりおきが忙しいママにおすすめな3つの理由</h3>
                         <p class="read-time">読了の目安：約9分</p>
@@ -194,41 +163,35 @@
     </section>
 
     <!-- 商品ティーザー -->
-    <section class="py-16 bg-cream section-divider-top" aria-label="商品のご案内">
+    <section class="py-16 bg-white landing-band landing-band--b" aria-label="商品のご案内">
         <div class="max-w-3xl mx-auto px-6">
             <h2 class="text-3xl md:text-4xl font-bold text-brown text-center mb-6">商品</h2>
             <div class="bg-white rounded-2xl p-8 shadow-sm">
-                <div class="flex flex-col sm:flex-row gap-6 items-center">
-                    <div class="text-muted-red text-5xl shrink-0" aria-hidden="true"><i class="fa-solid fa-leaf"></i></div>
-                    <div class="text-center sm:text-left flex-1">
-                        <h3 class="text-xl font-bold text-brown mb-2">りんごティー</h3>
-                        <p class="text-dark-gray text-sm md:text-base mb-4">手軽にりんご習慣を取り入れたい方向けの自社商品です。</p>
-                        <a href="product-tea.html" class="btn-primary inline-block">詳しく見る</a>
-                    </div>
+                <div class="text-center sm:text-left">
+                    <h3 class="text-xl font-bold text-brown mb-2">りんごティー</h3>
+                    <p class="text-dark-gray text-sm md:text-base mb-4">手軽にりんご習慣を取り入れたい方向けの自社商品です。</p>
+                    <a href="product-tea.html" class="btn-primary inline-block">詳しく見る</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- アプリティーザー -->
-    <section class="py-16 bg-off-white section-divider-top" aria-label="アプリのご案内">
+    <section class="py-16 bg-off-white landing-band landing-band--a" aria-label="アプリのご案内">
         <div class="max-w-3xl mx-auto px-6">
             <h2 class="text-3xl md:text-4xl font-bold text-brown text-center mb-6">アプリ</h2>
             <div class="bg-white rounded-2xl p-8 shadow-sm">
-                <div class="flex flex-col sm:flex-row gap-6 items-center">
-                    <div class="text-muted-red text-5xl shrink-0" aria-hidden="true"><i class="fa-solid fa-heart-pulse"></i></div>
-                    <div class="text-center sm:text-left flex-1">
-                        <h3 class="text-xl font-bold text-brown mb-2">体調管理アプリ（プロトタイプ）</h3>
-                        <p class="text-dark-gray text-sm md:text-base mb-4">記録を続けやすい画面構成を試しています。</p>
-                        <a href="app-health.html" class="btn-primary inline-block">アプリページへ</a>
-                    </div>
+                <div class="text-center sm:text-left">
+                    <h3 class="text-xl font-bold text-brown mb-2">体調管理アプリ（プロトタイプ）</h3>
+                    <p class="text-dark-gray text-sm md:text-base mb-4">記録を続けやすい画面構成を試しています。</p>
+                    <a href="app-health.html" class="btn-primary inline-block">アプリページへ</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- プロフィール -->
-    <section id="profile" class="py-16 bg-cream section-divider-top">
+    <section id="profile" class="py-16 bg-white landing-band landing-band--b">
         <div class="max-w-3xl mx-auto px-6">
             <div class="flex flex-col items-center gap-8">
                 <img src="images/profile.png" alt="管理栄養士 りんちゃん" class="profile-image max-w-[240px] sm:max-w-[280px]" />
@@ -244,19 +207,23 @@
     </section>
 
     <!-- 締めのCTA -->
-    <section class="py-16 bg-off-white section-divider-top" aria-label="記事への誘導">
-        <div class="max-w-3xl mx-auto px-6 text-center">
-            <h2 class="text-2xl md:text-3xl font-bold text-brown mb-3">次の一歩は、読むことから</h2>
-            <p class="text-dark-gray mb-8 text-sm md:text-base leading-relaxed">
-                気になるテーマの記事から、整えるヒントを探してみてください。
-            </p>
-            <a href="#articles" class="btn-primary-large">
-                <i class="fa-solid fa-book-open mr-2" aria-hidden="true"></i>記事を読む
-            </a>
-            <div class="flex flex-wrap justify-center gap-x-6 gap-y-3 mt-8 text-sm text-dark-gray">
-                <span class="inline-flex items-center gap-2"><i class="fa-solid fa-check text-muted-red" aria-hidden="true"></i>管理栄養士監修</span>
-                <span class="inline-flex items-center gap-2"><i class="fa-solid fa-check text-muted-red" aria-hidden="true"></i>温活・美容</span>
-                <span class="inline-flex items-center gap-2"><i class="fa-solid fa-check text-muted-red" aria-hidden="true"></i>無料で読める</span>
+    <section class="py-16 bg-off-white landing-band landing-band--a" aria-label="記事への誘導">
+        <div class="max-w-3xl mx-auto px-6">
+            <div class="cta-closing-panel">
+                <div class="text-center">
+                    <h2 class="text-2xl md:text-3xl font-bold text-brown mb-3">次の一歩は、読むことから</h2>
+                    <p class="text-dark-gray mb-8 text-sm md:text-base leading-relaxed">
+                        気になるテーマの記事から、整えるヒントを探してみてください。
+                    </p>
+                    <a href="#articles" class="btn-primary-large">
+                        記事を読む
+                    </a>
+                </div>
+                <div class="cta-trust-bar">
+                    <span>管理栄養士監修</span>
+                    <span>温活・美容</span>
+                    <span>無料で読める</span>
+                </div>
             </div>
         </div>
     </section>
@@ -264,41 +231,18 @@
     <!-- フッター -->
     <footer class="bg-brown text-off-white py-12">
         <div class="max-w-3xl mx-auto px-6">
-            <div class="flex flex-col sm:flex-row sm:items-start gap-8 mb-8">
-                <div class="flex items-center gap-2">
-                    <span class="text-2xl text-off-white/90" aria-hidden="true"><i class="fa-solid fa-apple-whole"></i></span>
-                    <img src="images/logo.svg" alt="リンゴラボ" class="footer-logo brightness-0 invert opacity-90" />
-                </div>
-                <p class="text-sm opacity-80 sm:ml-auto sm:max-w-xs">
-                    管理栄養士りんちゃんが届ける、整える習慣のヒントです。
-                </p>
+            <div class="text-center space-y-6">
+                <p class="text-xs opacity-70">運営：Studio Jinsei ／ 監修：管理栄養士（りんちゃん）</p>
+
+                <nav aria-label="フッターナビゲーション">
+                    <ul class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm opacity-80">
+                        <li><a href="#" class="hover:text-muted-red transition">プライバシーポリシー</a></li>
+                        <li><a href="#" class="hover:text-muted-red transition">お問い合わせ</a></li>
+                    </ul>
+                </nav>
+
+                <p class="text-center text-xs opacity-60">© 2026 Studio Jinsei. All rights reserved.</p>
             </div>
-
-            <nav class="mb-8" aria-label="フッターナビゲーション">
-                <p class="text-xs uppercase tracking-wider opacity-60 mb-3">サイト内</p>
-                <ul class="flex flex-wrap gap-x-5 gap-y-2 text-sm font-medium">
-                    <li><a href="#about" class="hover:text-muted-red transition underline-offset-4 hover:underline">コンセプト</a></li>
-                    <li><a href="product-tea.html" class="hover:text-muted-red transition underline-offset-4 hover:underline">商品</a></li>
-                    <li><a href="app-health.html" class="hover:text-muted-red transition underline-offset-4 hover:underline">アプリ</a></li>
-                    <li><a href="#articles" class="hover:text-muted-red transition underline-offset-4 hover:underline">記事を読む</a></li>
-                </ul>
-            </nav>
-
-            <nav class="mb-8 pb-8 border-b border-off-white/20" aria-label="ポリシー・お問い合わせ">
-                <ul class="flex flex-wrap gap-x-5 gap-y-2 text-sm">
-                    <li><a href="#profile" class="hover:text-muted-red transition opacity-90 hover:opacity-100">プロフィール</a></li>
-                    <li><a href="#" class="hover:text-muted-red transition opacity-90 hover:opacity-100">プライバシーポリシー</a></li>
-                    <li><a href="#" class="hover:text-muted-red transition opacity-90 hover:opacity-100">お問い合わせ</a></li>
-                </ul>
-            </nav>
-
-            <div class="text-sm opacity-75 mb-6 leading-relaxed">
-                <h3 class="font-bold text-off-white mb-2 text-base opacity-90">運営者情報</h3>
-                <p>サイト名：リンゴラボ（仮）／ 運営：Studio Jinsei ／ 監修：管理栄養士（りんちゃん）</p>
-                <p class="text-xs opacity-70 mt-2">※ 本サイトの情報は一般的な解説であり、個別の医学的助言ではありません。</p>
-            </div>
-
-            <p class="text-center text-sm opacity-60">© 2026 Studio Jinsei. All rights reserved.</p>
         </div>
     </footer>
 
@@ -312,12 +256,12 @@
                 mobileMenu.classList.add('hidden');
                 mobileMenuButton.setAttribute('aria-expanded', 'false');
                 mobileMenuButton.setAttribute('aria-label', 'メニューを開く');
-                mobileMenuButton.innerHTML = '<i class="fa-solid fa-bars"></i>';
+                mobileMenuButton.innerHTML = '☰';
             } else {
                 mobileMenu.classList.remove('hidden');
                 mobileMenuButton.setAttribute('aria-expanded', 'true');
                 mobileMenuButton.setAttribute('aria-label', 'メニューを閉じる');
-                mobileMenuButton.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+                mobileMenuButton.innerHTML = '✕';
             }
         });
 
@@ -327,7 +271,7 @@
                     mobileMenu.classList.add('hidden');
                     mobileMenuButton.setAttribute('aria-expanded', 'false');
                     mobileMenuButton.setAttribute('aria-label', 'メニューを開く');
-                    mobileMenuButton.innerHTML = '<i class="fa-solid fa-bars"></i>';
+                    mobileMenuButton.innerHTML = '☰';
                 }
             });
         });
