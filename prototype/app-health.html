@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>体調管理アプリ - リンゴラボ（仮）</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-off-white text-dark-gray">
+
+    <!-- ナビゲーション -->
+    <nav class="bg-white shadow-sm fixed w-full z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center" aria-label="リンゴラボ トップページへ">
+                <img src="images/logo.svg" alt="リンゴラボ ロゴ" class="h-12" />
+            </a>
+
+            <!-- PC ナビゲーション -->
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="index.html#articles" class="text-dark-gray hover:text-muted-red transition">記事</a>
+                <a href="product-tea.html" class="text-dark-gray hover:text-muted-red transition">商品</a>
+                <a href="app-health.html" class="text-dark-gray hover:text-muted-red transition">アプリ</a>
+                <a href="index.html#about" class="text-dark-gray hover:text-muted-red transition" aria-label="トップのリンゴラボについてへ">リンゴラボについて</a>
+                <a href="index.html#articles" class="btn-primary">記事を読む</a>
+            </div>
+
+            <!-- モバイル ハンバーガーメニューボタン -->
+            <button id="mobile-menu-button" class="md:hidden text-2xl text-dark-gray" aria-label="メニューを開く" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- モバイルメニュー -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <div class="container mx-auto px-6 py-4 flex flex-col space-y-4">
+                <a href="index.html#articles" class="text-dark-gray hover:text-muted-red transition">記事</a>
+                <a href="product-tea.html" class="text-dark-gray hover:text-muted-red transition">商品</a>
+                <a href="app-health.html" class="text-dark-gray hover:text-muted-red transition">アプリ</a>
+                <a href="index.html#about" class="text-dark-gray hover:text-muted-red transition" aria-label="トップのリンゴラボについてへ">リンゴラボについて</a>
+                <a href="index.html#articles" class="btn-primary text-center">記事を読む</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- アプリヒーロー -->
+    <section class="pt-32 pb-20 bg-gradient-to-br from-cream to-off-white">
+        <div class="container mx-auto px-6 text-center">
+            <!-- アプリアイコン -->
+            <div class="mb-8">
+                <div class="inline-block w-32 h-32 bg-gradient-to-br from-muted-red to-red-400 rounded-3xl shadow-lg flex items-center justify-center text-white text-6xl">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                </div>
+            </div>
+
+            <!-- タイトル -->
+            <h1 class="text-5xl md:text-6xl font-bold text-brown mb-6 leading-tight">
+                体調管理アプリ
+            </h1>
+
+            <!-- サブタイトル -->
+            <p class="text-xl md:text-2xl text-dark-gray mb-10 max-w-2xl mx-auto leading-relaxed">
+                毎日の体調を記録して、<br>
+                自分の体のリズムを知ろう
+            </p>
+
+            <!-- ダウンロードボタン -->
+            <div class="flex flex-col md:flex-row gap-4 justify-center items-center mb-6">
+                <a href="#" class="btn-primary-large flex items-center">
+                    <i class="fa-brands fa-apple mr-2 text-2xl"></i>
+                    App Storeからダウンロード
+                </a>
+                <a href="#" class="btn-primary-large flex items-center">
+                    <i class="fa-brands fa-google-play mr-2 text-2xl"></i>
+                    Google Playで手に入れよう
+                </a>
+            </div>
+
+            <p class="text-sm text-dark-gray">
+                無料ダウンロード・基本機能は完全無料
+            </p>
+        </div>
+    </section>
+
+    <!-- 主要機能 -->
+    <section class="py-20 bg-off-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-brown text-center mb-16">
+                主な機能
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                <!-- 機能1 -->
+                <div class="card-feature">
+                    <div class="icon text-muted-red" aria-hidden="true">
+                        <i class="fa-solid fa-calendar-check"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-brown mb-4">毎日の記録</h3>
+                    <p class="text-dark-gray mb-6">
+                        体温、体調、睡眠時間を簡単に記録。シンプルなUIで続けやすい。
+                    </p>
+                </div>
+
+                <!-- 機能2 -->
+                <div class="card-feature">
+                    <div class="icon text-muted-red" aria-hidden="true">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-brown mb-4">グラフで可視化</h3>
+                    <p class="text-dark-gray mb-6">
+                        体調の変化を分かりやすいグラフで表示。パターンが一目で分かる。
+                    </p>
+                </div>
+
+                <!-- 機能3 -->
+                <div class="card-feature">
+                    <div class="icon text-muted-red" aria-hidden="true">
+                        <i class="fa-solid fa-bell"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-brown mb-4">リマインダー</h3>
+                    <p class="text-dark-gray mb-6">
+                        記録し忘れを防ぐ通知機能。自分の好きな時間に設定できる。
+                    </p>
+                </div>
+
+                <!-- 機能4 -->
+                <div class="card-feature">
+                    <div class="icon text-muted-red" aria-hidden="true">
+                        <i class="fa-solid fa-fire"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-brown mb-4">温活サポート</h3>
+                    <p class="text-dark-gray mb-6">
+                        体温の変化をトラッキング。冷え性改善の目安に。
+                    </p>
+                </div>
+
+                <!-- 機能5 -->
+                <div class="card-feature">
+                    <div class="icon text-muted-red" aria-hidden="true">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-brown mb-4">管理栄養士監修</h3>
+                    <p class="text-dark-gray mb-6">
+                        りんちゃんの温活・美容アドバイスが読める。
+                    </p>
+                </div>
+
+                <!-- 機能6 -->
+                <div class="card-feature">
+                    <div class="icon text-muted-red" aria-hidden="true">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-brown mb-4">プライバシー重視</h3>
+                    <p class="text-dark-gray mb-6">
+                        データは端末内で安全に保管。広告なしで快適。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- スクリーンショット（モックアップ） -->
+    <section class="py-20 bg-cream">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-brown text-center mb-16">
+                使いやすいデザイン
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                <!-- スクリーン1 -->
+                <div class="bg-white rounded-3xl p-8 shadow-md">
+                    <div class="aspect-[9/16] bg-gradient-to-br from-cream to-off-white rounded-2xl flex items-center justify-center mb-4">
+                        <div class="text-center">
+                            <i class="fa-solid fa-mobile-screen-button text-6xl text-muted-red mb-4"></i>
+                            <p class="text-sm text-dark-gray">記録画面</p>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-brown mb-2 text-center">シンプルな入力</h3>
+                    <p class="text-sm text-dark-gray text-center">
+                        タップするだけで記録完了
+                    </p>
+                </div>
+
+                <!-- スクリーン2 -->
+                <div class="bg-white rounded-3xl p-8 shadow-md">
+                    <div class="aspect-[9/16] bg-gradient-to-br from-cream to-off-white rounded-2xl flex items-center justify-center mb-4">
+                        <div class="text-center">
+                            <i class="fa-solid fa-chart-column text-6xl text-muted-red mb-4"></i>
+                            <p class="text-sm text-dark-gray">グラフ画面</p>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-brown mb-2 text-center">見やすいグラフ</h3>
+                    <p class="text-sm text-dark-gray text-center">
+                        変化が一目で分かる
+                    </p>
+                </div>
+
+                <!-- スクリーン3 -->
+                <div class="bg-white rounded-3xl p-8 shadow-md">
+                    <div class="aspect-[9/16] bg-gradient-to-br from-cream to-off-white rounded-2xl flex items-center justify-center mb-4">
+                        <div class="text-center">
+                            <i class="fa-solid fa-lightbulb text-6xl text-muted-red mb-4"></i>
+                            <p class="text-sm text-dark-gray">アドバイス画面</p>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-brown mb-2 text-center">専門家のアドバイス</h3>
+                    <p class="text-sm text-dark-gray text-center">
+                        りんちゃんの温活Tips
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- こんな人におすすめ -->
+    <section class="py-20 bg-off-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-brown text-center mb-12">
+                こんな人におすすめ
+            </h2>
+
+            <div class="max-w-2xl mx-auto space-y-4">
+                <div class="flex items-center bg-white rounded-2xl p-6">
+                    <span class="text-muted-red text-2xl mr-4" aria-hidden="true">
+                        <i class="fa-solid fa-check"></i>
+                    </span>
+                    <p class="text-lg text-dark-gray">冷え性に悩んでいる</p>
+                </div>
+                <div class="flex items-center bg-white rounded-2xl p-6">
+                    <span class="text-muted-red text-2xl mr-4" aria-hidden="true">
+                        <i class="fa-solid fa-check"></i>
+                    </span>
+                    <p class="text-lg text-dark-gray">生理周期と体調の関係を知りたい</p>
+                </div>
+                <div class="flex items-center bg-white rounded-2xl p-6">
+                    <span class="text-muted-red text-2xl mr-4" aria-hidden="true">
+                        <i class="fa-solid fa-check"></i>
+                    </span>
+                    <p class="text-lg text-dark-gray">ダイエットや体重管理をしたい</p>
+                </div>
+                <div class="flex items-center bg-white rounded-2xl p-6">
+                    <span class="text-muted-red text-2xl mr-4" aria-hidden="true">
+                        <i class="fa-solid fa-check"></i>
+                    </span>
+                    <p class="text-lg text-dark-gray">睡眠の質を改善したい</p>
+                </div>
+                <div class="flex items-center bg-white rounded-2xl p-6">
+                    <span class="text-muted-red text-2xl mr-4" aria-hidden="true">
+                        <i class="fa-solid fa-check"></i>
+                    </span>
+                    <p class="text-lg text-dark-gray">手軽に健康管理を始めたい</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 最終CTA -->
+    <section class="py-20 bg-cream">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold text-brown mb-8">
+                今日から体調管理を始めよう
+            </h2>
+
+            <div class="flex flex-col md:flex-row gap-4 justify-center items-center mb-6">
+                <a href="#" class="btn-primary-large flex items-center">
+                    <i class="fa-brands fa-apple mr-2 text-2xl"></i>
+                    App Store
+                </a>
+                <a href="#" class="btn-primary-large flex items-center">
+                    <i class="fa-brands fa-google-play mr-2 text-2xl"></i>
+                    Google Play
+                </a>
+            </div>
+
+            <div class="flex justify-center items-center space-x-6 mt-8 text-sm text-dark-gray">
+                <div class="flex items-center">
+                    <span class="text-muted-red mr-2" aria-hidden="true">
+                        <i class="fa-solid fa-check"></i>
+                    </span>
+                    完全無料
+                </div>
+                <div class="flex items-center">
+                    <span class="text-muted-red mr-2" aria-hidden="true">
+                        <i class="fa-solid fa-check"></i>
+                    </span>
+                    広告なし
+                </div>
+                <div class="flex items-center">
+                    <span class="text-muted-red mr-2" aria-hidden="true">
+                        <i class="fa-solid fa-check"></i>
+                    </span>
+                    管理栄養士監修
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="bg-brown text-off-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                <div>
+                    <img src="images/logo.svg" alt="リンゴラボ" class="footer-logo mb-4" />
+                    <p class="text-sm opacity-80">
+                        管理栄養士りんちゃんが教える、<br>
+                        整える習慣
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">カテゴリー</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-muted-red transition">温活</a></li>
+                        <li><a href="#" class="hover:text-muted-red transition">美容</a></li>
+                        <li><a href="#" class="hover:text-muted-red transition">食事</a></li>
+                    </ul>
+                </div>
+                <div class="md:col-span-2">
+                    <h4 class="font-bold mb-3">メニュー</h4>
+                    <ul class="flex flex-wrap gap-x-5 gap-y-2 text-sm">
+                        <li><a href="index.html#about" class="hover:text-muted-red transition">リンゴラボについて</a></li>
+                        <li><a href="product-tea.html" class="hover:text-muted-red transition">商品</a></li>
+                        <li><a href="app-health.html" class="hover:text-muted-red transition">アプリ</a></li>
+                        <li><a href="index.html#articles" class="hover:text-muted-red transition">記事</a></li>
+                        <li><a href="index.html#profile" class="hover:text-muted-red transition">プロフィール</a></li>
+                        <li><a href="#" class="hover:text-muted-red transition">プライバシーポリシー</a></li>
+                        <li><a href="#" class="hover:text-muted-red transition">お問い合わせ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center text-sm opacity-60 pt-8 border-t border-off-white/20">
+                © 2026 Studio Jinsei. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // モバイルハンバーガーメニュー
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+
+            if (isExpanded) {
+                mobileMenu.classList.add('hidden');
+                mobileMenuButton.setAttribute('aria-expanded', 'false');
+                mobileMenuButton.setAttribute('aria-label', 'メニューを開く');
+                mobileMenuButton.innerHTML = '<i class="fa-solid fa-bars"></i>';
+            } else {
+                mobileMenu.classList.remove('hidden');
+                mobileMenuButton.setAttribute('aria-expanded', 'true');
+                mobileMenuButton.setAttribute('aria-label', 'メニューを閉じる');
+                mobileMenuButton.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+            }
+        });
+
+        // スムーススクロール時にモバイルメニューを閉じる
+        const menuLinks = document.querySelectorAll('#mobile-menu a');
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenuButton.setAttribute('aria-expanded', 'false');
+                    mobileMenuButton.setAttribute('aria-label', 'メニューを開く');
+                    mobileMenuButton.innerHTML = '<i class="fa-solid fa-bars"></i>';
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

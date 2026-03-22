@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>りんごティー - リンゴラボ（仮）</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-off-white text-dark-gray">
+
+    <!-- ナビゲーション -->
+    <nav class="bg-white shadow-sm fixed w-full z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center" aria-label="リンゴラボ トップページへ">
+                <img src="images/logo.svg" alt="リンゴラボ ロゴ" class="h-12" />
+            </a>
+
+            <!-- PC ナビゲーション -->
+            <div class="hidden md:flex space-x-8 items-center">
+                
+                <a href="product-tea.html" class="text-dark-gray hover:text-muted-red transition" aria-label="りんごティー">商品</a>
+                <a href="app-health.html" class="text-dark-gray hover:text-muted-red transition" aria-label="体調管理アプリ">アプリ</a>
+                <a href="index.html#about" class="text-dark-gray hover:text-muted-red transition" aria-label="トップのリンゴラボについてへ">リンゴラボについて</a>
+                <a href="index.html#articles" class="btn-primary" aria-label="記事を読む">記事を読む</a>
+            </div>
+
+            <!-- モバイル ハンバーガーメニューボタン -->
+            <button id="mobile-menu-button" class="md:hidden text-2xl text-dark-gray" aria-label="メニューを開く" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- モバイルメニュー -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <div class="container mx-auto px-6 py-4 flex flex-col space-y-4">
+                
+                <a href="product-tea.html" class="text-dark-gray hover:text-muted-red transition" aria-label="りんごティー">商品</a>
+                <a href="app-health.html" class="text-dark-gray hover:text-muted-red transition" aria-label="体調管理アプリ">アプリ</a>
+                <a href="index.html#about" class="text-dark-gray hover:text-muted-red transition" aria-label="トップのリンゴラボについてへ">リンゴラボについて</a>
+                <a href="index.html#articles" class="btn-primary text-center" aria-label="記事を読む">記事を読む</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 商品ヒーロー -->
+    <section class="pt-32 pb-16 bg-gradient-to-br from-cream to-off-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <!-- 商品画像 -->
+                    <div class="text-center">
+                        <img src="images/tea.png" alt="りんごティー" class="w-full max-w-md mx-auto rounded-2xl" />
+                    </div>
+
+                    <!-- 商品情報 -->
+                    <div>
+                        <span class="inline-block bg-muted-red text-white text-sm px-4 py-2 rounded-full mb-4">温活商品</span>
+                        <h1 class="text-4xl md:text-5xl font-bold text-brown mb-6 leading-tight">
+                            りんごティー
+                        </h1>
+                        <p class="text-xl text-dark-gray mb-6 leading-relaxed">
+                            1日1個のりんご習慣を、<br>
+                            温かい一杯から。
+                        </p>
+                        <p class="text-lg text-dark-gray mb-8 leading-relaxed">
+                            管理栄養士りんちゃん監修。国産りんご100%使用の温活ティー。ノンカフェインだから、寝る前のリラックスタイムにも。
+                        </p>
+
+                        <!-- 価格 -->
+                        <div class="bg-white rounded-2xl p-6 mb-6">
+                            <div class="flex items-baseline mb-2">
+                                <span class="text-3xl font-bold text-brown">¥2,980</span>
+                                <span class="text-sm text-dark-gray ml-2">（税込）</span>
+                            </div>
+                            <p class="text-sm text-dark-gray">30包入り（約1ヶ月分）</p>
+                        </div>
+
+                        <!-- CTA -->
+                        <a href="#" class="btn-primary-large w-full md:w-auto block text-center mb-4">
+                            購入する →
+                        </a>
+                        <p class="text-sm text-dark-gray text-center md:text-left">
+                            <i class="fa-solid fa-truck mr-2 text-muted-red" aria-hidden="true"></i>
+                            送料無料・最短翌日お届け
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 商品の特徴 -->
+    <section class="py-20 bg-off-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-brown text-center mb-16">
+                3つのこだわり
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                <!-- 特徴1 -->
+                <div class="card-feature">
+                    <div class="icon text-muted-red" aria-hidden="true">
+                        <i class="fa-solid fa-apple-whole"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-brown mb-4">国産りんご100%</h3>
+                    <p class="text-dark-gray">
+                        青森県産の新鮮なりんごだけを使用。香料・保存料は一切不使用。
+                    </p>
+                </div>
+
+                <!-- 特徴2 -->
+                <div class="card-feature">
+                    <div class="icon text-muted-red" aria-hidden="true">
+                        <i class="fa-solid fa-mug-hot"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-brown mb-4">ノンカフェイン</h3>
+                    <p class="text-dark-gray">
+                        就寝前でも安心。体を温めながらリラックスできる優しい味わい。
+                    </p>
+                </div>
+
+                <!-- 特徴3 -->
+                <div class="card-feature">
+                    <div class="icon text-muted-red" aria-hidden="true">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-brown mb-4">管理栄養士監修</h3>
+                    <p class="text-dark-gray">
+                        温活・美容栄養のプロが開発。ポリフェノール豊富なブレンド。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 飲み方 -->
+    <section class="py-20 bg-cream">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-brown text-center mb-16">
+                おすすめの飲み方
+            </h2>
+
+            <div class="max-w-3xl mx-auto space-y-8">
+                <!-- ステップ1 -->
+                <div class="bg-white rounded-2xl p-8">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 w-12 h-12 bg-muted-red text-white rounded-full flex items-center justify-center text-xl font-bold mr-6">
+                            1
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-brown mb-3">カップにティーバッグを入れる</h3>
+                            <p class="text-dark-gray leading-relaxed">
+                                お好みのカップやマグに、ティーバッグ1包を入れます。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ステップ2 -->
+                <div class="bg-white rounded-2xl p-8">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 w-12 h-12 bg-muted-red text-white rounded-full flex items-center justify-center text-xl font-bold mr-6">
+                            2
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-brown mb-3">お湯を注ぐ</h3>
+                            <p class="text-dark-gray leading-relaxed">
+                                80〜90℃のお湯を150ml注ぎ、3〜5分ほど蒸らします。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ステップ3 -->
+                <div class="bg-white rounded-2xl p-8">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 w-12 h-12 bg-muted-red text-white rounded-full flex items-center justify-center text-xl font-bold mr-6">
+                            3
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-brown mb-3">完成</h3>
+                            <p class="text-dark-gray leading-relaxed">
+                                ティーバッグを取り出して、温かいうちにゆっくりお楽しみください。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 関連記事 -->
+    <section class="py-20 bg-off-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-brown text-center mb-12">
+                関連記事
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto mb-12">
+                <!-- 記事カード1 -->
+                <article class="article-card">
+                    <a href="#" aria-label="冷え性改善！管理栄養士が教える温活習慣5選を読む">
+                        <div class="thumbnail bg-gradient-to-br from-red-100 to-orange-100">
+                            <i class="fa-solid fa-fire text-muted-red" aria-hidden="true"></i>
+                        </div>
+                        <span class="badge">温活</span>
+                        <h3>冷え性改善！管理栄養士が教える温活習慣5選</h3>
+                        <p class="read-time">3分で読める</p>
+                    </a>
+                </article>
+
+                <!-- 記事カード2 -->
+                <article class="article-card">
+                    <a href="#" aria-label="体を温める食材10選｜管理栄養士のおすすめレシピを読む">
+                        <div class="thumbnail bg-gradient-to-br from-green-100 to-emerald-100">
+                            <i class="fa-solid fa-bowl-food text-green-600" aria-hidden="true"></i>
+                        </div>
+                        <span class="badge">食事</span>
+                        <h3>体を温める食材10選｜管理栄養士のおすすめレシピ</h3>
+                        <p class="read-time">7分で読める</p>
+                    </a>
+                </article>
+
+                <!-- 記事カード3 -->
+                <article class="article-card">
+                    <a href="#" aria-label="りんごの健康効果とは？管理栄養士が解説を読む">
+                        <div class="thumbnail bg-gradient-to-br from-red-50 to-pink-100">
+                            <i class="fa-solid fa-apple-whole text-red-500" aria-hidden="true"></i>
+                        </div>
+                        <span class="badge">食事</span>
+                        <h3>りんごの健康効果とは？管理栄養士が解説</h3>
+                        <p class="read-time">5分で読める</p>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="bg-brown text-off-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                <div>
+                    <img src="images/logo.svg" alt="リンゴラボ" class="footer-logo mb-4" />
+                    <p class="text-sm opacity-80">
+                        管理栄養士りんちゃんが教える、<br>
+                        整える習慣
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">カテゴリー</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-muted-red transition">温活</a></li>
+                        <li><a href="#" class="hover:text-muted-red transition">美容</a></li>
+                        <li><a href="#" class="hover:text-muted-red transition">食事</a></li>
+                    </ul>
+                </div>
+                <div class="md:col-span-2">
+                    <h4 class="font-bold mb-3">メニュー</h4>
+                    <ul class="flex flex-wrap gap-x-5 gap-y-2 text-sm">
+                        <li><a href="index.html#about" class="hover:text-muted-red transition">リンゴラボについて</a></li>
+                        <li><a href="product-tea.html" class="hover:text-muted-red transition">商品</a></li>
+                        <li><a href="app-health.html" class="hover:text-muted-red transition">アプリ</a></li>
+                        <li><a href="index.html#articles" class="hover:text-muted-red transition">記事</a></li>
+                        <li><a href="index.html#profile" class="hover:text-muted-red transition">プロフィール</a></li>
+                        <li><a href="#" class="hover:text-muted-red transition">プライバシーポリシー</a></li>
+                        <li><a href="#" class="hover:text-muted-red transition">お問い合わせ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center text-sm opacity-60 pt-8 border-t border-off-white/20">
+                © 2026 Studio Jinsei. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // モバイルハンバーガーメニュー
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+
+            if (isExpanded) {
+                mobileMenu.classList.add('hidden');
+                mobileMenuButton.setAttribute('aria-expanded', 'false');
+                mobileMenuButton.setAttribute('aria-label', 'メニューを開く');
+                mobileMenuButton.innerHTML = '<i class="fa-solid fa-bars"></i>';
+            } else {
+                mobileMenu.classList.remove('hidden');
+                mobileMenuButton.setAttribute('aria-expanded', 'true');
+                mobileMenuButton.setAttribute('aria-label', 'メニューを閉じる');
+                mobileMenuButton.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+            }
+        });
+
+        // スムーススクロール時にモバイルメニューを閉じる
+        const menuLinks = document.querySelectorAll('#mobile-menu a');
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenuButton.setAttribute('aria-expanded', 'false');
+                    mobileMenuButton.setAttribute('aria-label', 'メニューを開く');
+                    mobileMenuButton.innerHTML = '<i class="fa-solid fa-bars"></i>';
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

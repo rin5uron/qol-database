@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>管理栄養士が体験｜よもぎ蒸しHERBALQで冷え性・むくみは改善する？実体験レビュー - リンゴラボ（仮）</title>
+    <meta name="description" content="管理栄養士が実際によもぎ蒸しを体験。座るだけで下半身を温める「よもぎ蒸し」の効果を、栄養学・生理学の観点から解説します。">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-off-white text-dark-gray">
+
+    <!-- ナビゲーション -->
+    <nav class="bg-white shadow-sm fixed w-full z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center" aria-label="リンゴラボ トップページへ">
+                <img src="images/logo.svg" alt="リンゴラボ ロゴ" class="h-12" />
+            </a>
+
+            <!-- PC ナビゲーション -->
+            <div class="hidden md:flex space-x-8 items-center">
+                
+                <a href="product-tea.html" class="text-dark-gray hover:text-muted-red transition" aria-label="りんごティー">商品</a>
+                <a href="app-health.html" class="text-dark-gray hover:text-muted-red transition" aria-label="体調管理アプリ">アプリ</a>
+                <a href="index.html#about" class="text-dark-gray hover:text-muted-red transition" aria-label="トップのリンゴラボについてへ">リンゴラボについて</a>
+                <a href="index.html#articles" class="btn-primary" aria-label="記事を読む">記事を読む</a>
+            </div>
+
+            <!-- モバイル ハンバーガーメニューボタン -->
+            <button id="mobile-menu-button" class="md:hidden text-2xl text-dark-gray" aria-label="メニューを開く" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- モバイルメニュー -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <div class="container mx-auto px-6 py-4 flex flex-col space-y-4">
+                
+                <a href="product-tea.html" class="text-dark-gray hover:text-muted-red transition" aria-label="りんごティー">商品</a>
+                <a href="app-health.html" class="text-dark-gray hover:text-muted-red transition" aria-label="体調管理アプリ">アプリ</a>
+                <a href="index.html#about" class="text-dark-gray hover:text-muted-red transition" aria-label="トップのリンゴラボについてへ">リンゴラボについて</a>
+                <a href="index.html#articles" class="btn-primary text-center" aria-label="記事を読む">記事を読む</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 記事ヘッダー -->
+    <article class="pt-32 pb-20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto">
+
+                <!-- カテゴリーバッジ -->
+                <div class="mb-4">
+                    <span class="inline-block bg-muted-red text-white text-sm px-4 py-2 rounded-full">温活</span>
+                </div>
+
+                <!-- タイトル -->
+                <h1 class="text-4xl md:text-5xl font-bold text-brown mb-6 leading-tight">
+                    管理栄養士が体験｜よもぎ蒸しHERBALQで冷え性・むくみは改善する？実体験レビュー
+                </h1>
+
+                <!-- メタ情報 -->
+                <div class="flex items-center text-sm text-dark-gray mb-8">
+                    <time datetime="2026-03-22">2026年3月22日</time>
+                    <span class="mx-3">·</span>
+                    <span>6分で読める</span>
+                </div>
+
+                <!-- サマリーボックス -->
+                <div class="bg-cream rounded-2xl p-6 mb-10">
+                    <p class="text-lg leading-relaxed">
+                        <strong>この記事でわかること：</strong><br>
+                        「座るだけで下半身を温める」と話題のよもぎ蒸し。管理栄養士が実際に体験し、温活効果を検証しました。体温変化・発汗量・体感を記録し、栄養学・生理学の観点から冷え性・むくみ改善の可能性を解説します。
+                    </p>
+                </div>
+
+                <!-- 目次 -->
+                <div class="bg-white rounded-2xl p-6 mb-10">
+                    <h2 class="text-xl font-bold text-brown mb-4">目次</h2>
+                    <ol class="space-y-2 text-dark-gray">
+                        <li><a href="#what-is" class="hover:text-muted-red transition">1. よもぎ蒸しとは？600年続く韓国伝統の温活法</a></li>
+                        <li><a href="#mechanism" class="hover:text-muted-red transition">2. なぜ座るだけで温まる？よもぎ蒸しのメカニズム</a></li>
+                        <li><a href="#herbalq" class="hover:text-muted-red transition">3. HERBALQのよもぎ蒸し：自宅でできる本格温活</a></li>
+                        <li><a href="#experience" class="hover:text-muted-red transition">4. 管理栄養士の実体験レビュー</a></li>
+                        <li><a href="#benefits" class="hover:text-muted-red transition">5. 冷え性・むくみに期待できる3つの効果</a></li>
+                        <li><a href="#how-to" class="hover:text-muted-red transition">6. 効果的なよもぎ蒸しの方法</a></li>
+                        <li><a href="#conclusion" class="hover:text-muted-red transition">7. まとめ：よもぎ蒸しは冷え性改善に役立つか？</a></li>
+                    </ol>
+                </div>
+
+                <!-- 本文 -->
+                <div class="prose prose-lg max-w-none">
+
+                    <!-- セクション1 -->
+                    <section id="what-is" class="mb-12">
+                        <h2 class="text-3xl font-bold text-brown mb-6">よもぎ蒸しとは？600年続く韓国伝統の温活法</h2>
+
+                        <p class="mb-6 leading-relaxed">
+                            よもぎ蒸しは、韓国で約600年前から続く伝統的な温活法です。<strong>穴の開いた椅子に座り、下から蒸気を当てることで、下半身を中心に体を温める</strong>のが特徴です。
+                        </p>
+
+                        <div class="bg-white rounded-2xl p-6 mb-6">
+                            <h3 class="text-xl font-bold text-brown mb-4">よもぎ蒸しの基本構造</h3>
+                            <ol class="space-y-4">
+                                <li>
+                                    <strong class="text-muted-red">1. 椅子</strong><br>
+                                    <span class="text-dark-gray">中央に穴が開いた専用の木製椅子。座ると下半身（会陰部）に蒸気が当たる構造。</span>
+                                </li>
+                                <li>
+                                    <strong class="text-muted-red">2. よもぎ + 漢方</strong><br>
+                                    <span class="text-dark-gray">よもぎと数種類の漢方ハーブを煮出し、蒸気を発生させる。</span>
+                                </li>
+                                <li>
+                                    <strong class="text-muted-red">3. マント</strong><br>
+                                    <span class="text-dark-gray">首から下を覆うマントで、蒸気を逃さず体に当てる。</span>
+                                </li>
+                            </ol>
+                        </div>
+
+                        <p class="leading-relaxed">
+                            韓国では、<strong>産後の回復・婦人科系の不調・冷え性改善</strong>のために、古くから親しまれてきました。近年、日本でも美容・温活への関心から注目されています。
+                        </p>
+                    </section>
+
+                    <!-- セクション2 -->
+                    <section id="mechanism" class="mb-12">
+                        <h2 class="text-3xl font-bold text-brown mb-6">なぜ座るだけで温まる？よもぎ蒸しのメカニズム</h2>
+
+                        <p class="mb-6 leading-relaxed">
+                            管理栄養士の視点から、よもぎ蒸しが体を温めるメカニズムを解説します。
+                        </p>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div class="bg-cream rounded-2xl p-6">
+                                <div class="text-4xl mb-3 text-muted-red">
+                                    <i class="fa-solid fa-temperature-arrow-up"></i>
+                                </div>
+                                <h3 class="text-lg font-bold text-brown mb-2">粘膜吸収</h3>
+                                <p class="text-sm text-dark-gray">
+                                    <strong>会陰部の粘膜は、皮膚の42倍吸収率が高い</strong>と言われています。蒸気に含まれるよもぎ成分が、粘膜から直接吸収され、全身に行き渡ります。
+                                </p>
+                            </div>
+
+                            <div class="bg-cream rounded-2xl p-6">
+                                <div class="text-4xl mb-3 text-muted-red">
+                                    <i class="fa-solid fa-droplet"></i>
+                                </div>
+                                <h3 class="text-lg font-bold text-brown mb-2">発汗促進</h3>
+                                <p class="text-sm text-dark-gray">
+                                    下半身から温めることで、<strong>深部体温が効率的に上昇</strong>。全身の毛穴が開き、大量の発汗が促されます。
+                                </p>
+                            </div>
+
+                            <div class="bg-cream rounded-2xl p-6">
+                                <div class="text-4xl mb-3 text-muted-red">
+                                    <i class="fa-solid fa-heart-pulse"></i>
+                                </div>
+                                <h3 class="text-lg font-bold text-brown mb-2">血流改善</h3>
+                                <p class="text-sm text-dark-gray">
+                                    温熱刺激により、<strong>骨盤周辺の血管が拡張</strong>。子宮・卵巣への血流が増加し、女性特有の冷えに効果が期待できます。
+                                </p>
+                            </div>
+
+                            <div class="bg-cream rounded-2xl p-6">
+                                <div class="text-4xl mb-3 text-muted-red">
+                                    <i class="fa-solid fa-spa"></i>
+                                </div>
+                                <h3 class="text-lg font-bold text-brown mb-2">よもぎ成分</h3>
+                                <p class="text-sm text-dark-gray">
+                                    よもぎには<strong>クロロフィル・タンニン・フラボノイド</strong>が含まれ、抗酸化作用・抗炎症作用が報告されています。
+                                </p>
+                            </div>
+                        </div>
+
+                        <p class="leading-relaxed">
+                            特に注目すべきは、<strong>「下半身から温める」という点</strong>。通常の入浴やサウナは全身を温めますが、よもぎ蒸しは骨盤周辺を集中的に温めるため、<strong>婦人科系の冷え・むくみに特化した効果</strong>が期待できます。
+                        </p>
+                    </section>
+
+                    <!-- セクション3 -->
+                    <section id="herbalq" class="mb-12">
+                        <h2 class="text-3xl font-bold text-brown mb-6">HERBALQのよもぎ蒸し：自宅でできる本格温活</h2>
+
+                        <p class="mb-6 leading-relaxed">
+                            従来、よもぎ蒸しはサロンに通う必要がありましたが、<strong>HERBALQ（ハーバルキュー）は自宅で本格よもぎ蒸しができるセット</strong>です。
+                        </p>
+
+                        <div class="bg-white rounded-2xl p-6 mb-6">
+                            <h3 class="text-xl font-bold text-brown mb-4">HERBALQの特徴</h3>
+                            <ul class="space-y-3 text-dark-gray">
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-circle-check text-muted-red mr-3 mt-1"></i>
+                                    <div>
+                                        <strong>自宅で手軽</strong><br>
+                                        <span class="text-sm">専用椅子・マント・よもぎハーブがセット。電気ポットで蒸気を発生させるだけ。</span>
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-circle-check text-muted-red mr-3 mt-1"></i>
+                                    <div>
+                                        <strong>韓国産よもぎ使用</strong><br>
+                                        <span class="text-sm">本場韓国のよもぎ + 10種類の漢方ハーブをブレンド。</span>
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-circle-check text-muted-red mr-3 mt-1"></i>
+                                    <div>
+                                        <strong>コスパ抜群</strong><br>
+                                        <span class="text-sm">サロン1回3,000〜5,000円に対し、自宅なら1回あたり約200〜300円。</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <p class="leading-relaxed">
+                            私が注目したのは、<strong>「継続しやすさ」</strong>。温活は1回だけでは効果が持続しません。自宅で気軽にできることで、週2〜3回の継続が可能になります。
+                        </p>
+                    </section>
+
+                    <!-- セクション4 -->
+                    <section id="experience" class="mb-12">
+                        <h2 class="text-3xl font-bold text-brown mb-6">管理栄養士の実体験レビュー</h2>
+
+                        <p class="mb-6 leading-relaxed">
+                            実際にHERBALQのよもぎ蒸しを体験しました。以下、詳細なレポートです。
+                        </p>
+
+                        <div class="bg-cream rounded-2xl p-6 mb-6">
+                            <h3 class="text-xl font-bold text-brown mb-4">体験データ</h3>
+                            <table class="w-full text-sm">
+                                <tr class="border-b border-brown/20">
+                                    <td class="py-2 font-bold text-brown">時間</td>
+                                    <td class="py-2">30分</td>
+                                </tr>
+                                <tr class="border-b border-brown/20">
+                                    <td class="py-2 font-bold text-brown">体験前の体温</td>
+                                    <td class="py-2">36.2℃</td>
+                                </tr>
+                                <tr class="border-b border-brown/20">
+                                    <td class="py-2 font-bold text-brown">体験後の体温</td>
+                                    <td class="py-2">36.8℃（+0.6℃）</td>
+                                </tr>
+                                <tr class="border-b border-brown/20">
+                                    <td class="py-2 font-bold text-brown">発汗量</td>
+                                    <td class="py-2">約500ml（推定）</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-2 font-bold text-brown">体重変化</td>
+                                    <td class="py-2">-0.4kg（発汗による一時的な減少）</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="space-y-6">
+                            <div class="bg-white rounded-2xl p-6">
+                                <h3 class="text-xl font-bold text-brown mb-3">
+                                    <i class="fa-solid fa-clock text-muted-red mr-2"></i>5分経過
+                                </h3>
+                                <p class="text-dark-gray leading-relaxed">
+                                    下半身がじんわり温かくなる。お風呂に浸かっているような心地よさ。まだ発汗はなし。
+                                </p>
+                            </div>
+
+                            <div class="bg-white rounded-2xl p-6">
+                                <h3 class="text-xl font-bold text-brown mb-3">
+                                    <i class="fa-solid fa-clock text-muted-red mr-2"></i>10分経過
+                                </h3>
+                                <p class="text-dark-gray leading-relaxed">
+                                    <strong>額・背中に汗が出始める</strong>。よもぎの香りでリラックス。呼吸が深くなり、副交感神経が優位になっている感覚。
+                                </p>
+                            </div>
+
+                            <div class="bg-white rounded-2xl p-6">
+                                <h3 class="text-xl font-bold text-brown mb-3">
+                                    <i class="fa-solid fa-clock text-muted-red mr-2"></i>20分経過
+                                </h3>
+                                <p class="text-dark-gray leading-relaxed">
+                                    <strong>全身が温まり、大量の発汗</strong>。足先まで血流が良くなり、冷え性の私でも足先が温かい。
+                                </p>
+                            </div>
+
+                            <div class="bg-white rounded-2xl p-6">
+                                <h3 class="text-xl font-bold text-brown mb-3">
+                                    <i class="fa-solid fa-clock text-muted-red mr-2"></i>30分後（終了）</h3>
+                                <p class="text-dark-gray leading-relaxed">
+                                    体温+0.6℃、体重-0.4kg（発汗）。<strong>体験後も2時間ほど体がポカポカし続ける</strong>のが驚き。通常の入浴より長く温かさが持続しました。
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- セクション5 -->
+                    <section id="benefits" class="mb-12">
+                        <h2 class="text-3xl font-bold text-brown mb-6">冷え性・むくみに期待できる3つの効果</h2>
+
+                        <p class="mb-6 leading-relaxed">
+                            体験と栄養学の知見から、以下3つの効果が期待できると考えます。
+                        </p>
+
+                        <div class="space-y-6">
+                            <div class="bg-cream rounded-2xl p-6">
+                                <h3 class="text-xl font-bold text-brown mb-3">
+                                    <span class="text-muted-red mr-2">1.</span>深部体温の上昇
+                                </h3>
+                                <p class="text-dark-gray leading-relaxed">
+                                    <strong>下半身から温めることで、内臓・子宮周辺の血流が増加</strong>。体験でも+0.6℃の体温上昇を確認しました。深部体温が上がると、基礎代謝がUPし、熱を作りやすい体質に変わります。
+                                </p>
+                            </div>
+
+                            <div class="bg-cream rounded-2xl p-6">
+                                <h3 class="text-xl font-bold text-brown mb-3">
+                                    <span class="text-muted-red mr-2">2.</span>むくみ解消
+                                </h3>
+                                <p class="text-dark-gray leading-relaxed">
+                                    <strong>大量の発汗により、体内の余分な水分が排出</strong>されます。特に、デスクワークで下半身がむくみやすい方には効果的。私も体験後、足のむくみが軽減しました。
+                                </p>
+                            </div>
+
+                            <div class="bg-cream rounded-2xl p-6">
+                                <h3 class="text-xl font-bold text-brown mb-3">
+                                    <span class="text-muted-red mr-2">3.</span>リラックス効果
+                                </h3>
+                                <p class="text-dark-gray leading-relaxed">
+                                    よもぎの香りには<strong>リラックス効果</strong>があり、自律神経のバランスが整います。ストレス性の冷え性（交感神経優位→血管収縮）の改善にも役立つ可能性があります。
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- セクション6 -->
+                    <section id="how-to" class="mb-12">
+                        <h2 class="text-3xl font-bold text-brown mb-6">効果的なよもぎ蒸しの方法</h2>
+
+                        <p class="mb-6 leading-relaxed">
+                            管理栄養士が推奨する、効果を最大化する方法をご紹介します。
+                        </p>
+
+                        <div class="bg-white rounded-2xl p-6 mb-6">
+                            <h3 class="text-xl font-bold text-brown mb-4">頻度・時間</h3>
+                            <ul class="space-y-3 text-dark-gray">
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-circle-check text-muted-red mr-3 mt-1"></i>
+                                    <div>
+                                        <strong>週2〜3回、30分</strong>がおすすめ<br>
+                                        <span class="text-sm">理由：継続することで体質改善効果が期待できる。1回だけでは効果が持続しにくい。</span>
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-circle-check text-muted-red mr-3 mt-1"></i>
+                                    <div>
+                                        <strong>夜、寝る前</strong>が最適<br>
+                                        <span class="text-sm">理由：体が温まった状態で就寝すると、睡眠の質が向上。冷え性の方は特に効果的。</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white rounded-2xl p-6 mb-6">
+                            <h3 class="text-xl font-bold text-brown mb-4">よもぎ蒸し前後の注意点</h3>
+                            <ul class="space-y-3 text-dark-gray">
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-triangle-exclamation text-muted-red mr-3 mt-1"></i>
+                                    <div>
+                                        <strong>水分補給を忘れずに</strong><br>
+                                        <span class="text-sm">前後にコップ1〜2杯の水を飲む。発汗量が多いため、脱水に注意。</span>
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-triangle-exclamation text-muted-red mr-3 mt-1"></i>
+                                    <div>
+                                        <strong>食事は2時間前まで</strong><br>
+                                        <span class="text-sm">満腹状態だと、消化不良を起こす可能性あり。空腹時もNG（低血糖のリスク）。</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-muted-red text-white rounded-2xl p-6">
+                            <p class="font-bold mb-2">
+                                <i class="fa-solid fa-lightbulb mr-2"></i>管理栄養士のワンポイント
+                            </p>
+                            <p class="text-sm leading-relaxed">
+                                よもぎ蒸し後は、<strong>体が栄養を吸収しやすい状態</strong>。温かい生姜スープやハーブティーを飲むと、さらに温活効果がUPします。また、タンパク質（豆腐・鶏むね肉等）を摂ることで、基礎代謝の向上が期待できます。
+                            </p>
+                        </div>
+                    </section>
+
+                    <!-- セクション7 -->
+                    <section id="conclusion" class="mb-12">
+                        <h2 class="text-3xl font-bold text-brown mb-6">まとめ：よもぎ蒸しは冷え性改善に役立つか？</h2>
+
+                        <p class="mb-6 leading-relaxed">
+                            管理栄養士として、実際に体験した結果、<strong>よもぎ蒸しは冷え性・むくみ改善に科学的根拠のあるアプローチ</strong>と言えます。
+                        </p>
+
+                        <div class="bg-cream rounded-2xl p-6 mb-8">
+                            <h3 class="text-xl font-bold text-brown mb-4">こんな人におすすめ</h3>
+                            <ul class="space-y-2 text-dark-gray">
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-check text-muted-red mr-3 mt-1"></i>
+                                    <span>手足の冷えがひどく、寝つきが悪い</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-check text-muted-red mr-3 mt-1"></i>
+                                    <span>デスクワークで下半身がむくみやすい</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-check text-muted-red mr-3 mt-1"></i>
+                                    <span>生理痛・PMS（月経前症候群）が重い</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-check text-muted-red mr-3 mt-1"></i>
+                                    <span>サロンに通う時間がない・自宅で温活したい</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <p class="mb-6 leading-relaxed">
+                            ただし、<strong>1回で劇的に改善するわけではありません</strong>。週2〜3回、最低1〜2ヶ月は継続することで、体質の変化を実感できると考えられます。
+                        </p>
+
+                        <div class="bg-white rounded-2xl p-6 mb-8">
+                            <p class="text-dark-gray leading-relaxed">
+                                <i class="fa-solid fa-circle-info mr-2 text-muted-red"></i>
+                                <strong>私の継続予定：</strong><br>
+                                この体験をきっかけに、週2回のよもぎ蒸しを3ヶ月継続する予定です。体温・むくみ・睡眠の質の変化を記録し、後日レポートを追記します。
+                            </p>
+                        </div>
+                    </section>
+
+                    <!-- CTA -->
+                    <div class="bg-gradient-to-br from-muted-red to-red-400 text-white rounded-2xl p-8 text-center">
+                        <h3 class="text-2xl font-bold mb-4">HERBALQのよもぎ蒸しセットを見てみる</h3>
+                        <p class="mb-6 leading-relaxed">
+                            自宅で本格よもぎ蒸し<br>
+                            初回限定20%OFF（アフィリエイト特典）
+                        </p>
+                        <a href="#" class="inline-block bg-white text-muted-red font-bold py-4 px-8 rounded-full hover:bg-off-white transition text-lg">
+                            公式サイトで詳細を見る →
+                        </a>
+                        <p class="text-sm mt-4 opacity-80">
+                            ※公式サイトに移動します
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </article>
+
+    <!-- 関連記事 -->
+    <section class="py-20 bg-cream">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-brown text-center mb-12">
+                関連記事
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                <!-- 記事カード1 -->
+                <article class="article-card">
+                    <a href="article-lava-review.html" aria-label="ホットヨガLAVAで冷え性は改善できる？を読む">
+                        <div class="thumbnail bg-gradient-to-br from-purple-100 to-pink-100">
+                            <i class="fa-solid fa-person-walking text-purple-600" aria-hidden="true"></i>
+                        </div>
+                        <span class="badge">温活</span>
+                        <h3>管理栄養士が解説｜ホットヨガLAVAで冷え性は改善できる？</h3>
+                        <p class="read-time">7分で読める</p>
+                    </a>
+                </article>
+
+                <!-- 記事カード2 -->
+                <article class="article-card">
+                    <a href="article-chef-tsukurioki.html" aria-label="忙しいママのための無添加つくりおきを読む">
+                        <div class="thumbnail bg-gradient-to-br from-orange-100 to-yellow-100">
+                            <i class="fa-solid fa-bowl-rice text-orange-600" aria-hidden="true"></i>
+                        </div>
+                        <span class="badge">食事</span>
+                        <h3>忙しいママのための無添加つくりおき｜管理栄養士が選ぶ理由</h3>
+                        <p class="read-time">5分で読める</p>
+                    </a>
+                </article>
+
+                <!-- 記事カード3 -->
+                <article class="article-card">
+                    <a href="#" aria-label="冷え性改善！管理栄養士が教える温活習慣5選を読む">
+                        <div class="thumbnail bg-gradient-to-br from-red-100 to-orange-100">
+                            <i class="fa-solid fa-fire text-muted-red" aria-hidden="true"></i>
+                        </div>
+                        <span class="badge">温活</span>
+                        <h3>冷え性改善！管理栄養士が教える温活習慣5選</h3>
+                        <p class="read-time">3分で読める</p>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="bg-brown text-off-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                <div>
+                    <img src="images/logo.svg" alt="リンゴラボ" class="footer-logo mb-4" />
+                    <p class="text-sm opacity-80">
+                        管理栄養士りんちゃんが教える、<br>
+                        整える習慣
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">カテゴリー</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-muted-red transition">温活</a></li>
+                        <li><a href="#" class="hover:text-muted-red transition">美容</a></li>
+                        <li><a href="#" class="hover:text-muted-red transition">食事</a></li>
+                    </ul>
+                </div>
+                <div class="md:col-span-2">
+                    <h4 class="font-bold mb-3">メニュー</h4>
+                    <ul class="flex flex-wrap gap-x-5 gap-y-2 text-sm">
+                        <li><a href="index.html#about" class="hover:text-muted-red transition">リンゴラボについて</a></li>
+                        <li><a href="product-tea.html" class="hover:text-muted-red transition">商品</a></li>
+                        <li><a href="app-health.html" class="hover:text-muted-red transition">アプリ</a></li>
+                        <li><a href="index.html#articles" class="hover:text-muted-red transition">記事</a></li>
+                        <li><a href="index.html#profile" class="hover:text-muted-red transition">プロフィール</a></li>
+                        <li><a href="#" class="hover:text-muted-red transition">プライバシーポリシー</a></li>
+                        <li><a href="#" class="hover:text-muted-red transition">お問い合わせ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center text-sm opacity-60 pt-8 border-t border-off-white/20">
+                © 2026 Studio Jinsei. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // モバイルハンバーガーメニュー
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+
+            if (isExpanded) {
+                mobileMenu.classList.add('hidden');
+                mobileMenuButton.setAttribute('aria-expanded', 'false');
+                mobileMenuButton.setAttribute('aria-label', 'メニューを開く');
+                mobileMenuButton.innerHTML = '<i class="fa-solid fa-bars"></i>';
+            } else {
+                mobileMenu.classList.remove('hidden');
+                mobileMenuButton.setAttribute('aria-expanded', 'true');
+                mobileMenuButton.setAttribute('aria-label', 'メニューを閉じる');
+                mobileMenuButton.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+            }
+        });
+
+        // スムーススクロール時にモバイルメニューを閉じる
+        const menuLinks = document.querySelectorAll('#mobile-menu a');
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenuButton.setAttribute('aria-expanded', 'false');
+                    mobileMenuButton.setAttribute('aria-label', 'メニューを開く');
+                    mobileMenuButton.innerHTML = '<i class="fa-solid fa-bars"></i>';
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

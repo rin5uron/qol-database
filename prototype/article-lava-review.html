@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>管理栄養士が解説｜ホットヨガLAVAで冷え性は改善できる？体験前の栄養学的分析 - リンゴラボ（仮）</title>
+    <meta name="description" content="管理栄養士が、ホットヨガLAVAの温活効果を栄養学・生理学の観点から分析。冷え性・むくみに悩む20-40代女性に向けて、体温上昇のメカニズムと期待できる効果を解説します。">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-off-white text-dark-gray">
+
+    <!-- ナビゲーション -->
+    <nav class="bg-white shadow-sm fixed w-full z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center" aria-label="リンゴラボ トップページへ">
+                <img src="images/logo.svg" alt="リンゴラボ ロゴ" class="h-12" />
+            </a>
+
+            <!-- PC ナビゲーション -->
+            <div class="hidden md:flex space-x-8 items-center">
+                
+                <a href="product-tea.html" class="text-dark-gray hover:text-muted-red transition" aria-label="りんごティー">商品</a>
+                <a href="app-health.html" class="text-dark-gray hover:text-muted-red transition" aria-label="体調管理アプリ">アプリ</a>
+                <a href="index.html#about" class="text-dark-gray hover:text-muted-red transition" aria-label="トップのリンゴラボについてへ">リンゴラボについて</a>
+                <a href="index.html#articles" class="btn-primary" aria-label="記事を読む">記事を読む</a>
+            </div>
+
+            <!-- モバイル ハンバーガーメニューボタン -->
+            <button id="mobile-menu-button" class="md:hidden text-2xl text-dark-gray" aria-label="メニューを開く" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- モバイルメニュー -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <div class="container mx-auto px-6 py-4 flex flex-col space-y-4">
+                
+                <a href="product-tea.html" class="text-dark-gray hover:text-muted-red transition" aria-label="りんごティー">商品</a>
+                <a href="app-health.html" class="text-dark-gray hover:text-muted-red transition" aria-label="体調管理アプリ">アプリ</a>
+                <a href="index.html#about" class="text-dark-gray hover:text-muted-red transition" aria-label="トップのリンゴラボについてへ">リンゴラボについて</a>
+                <a href="index.html#articles" class="btn-primary text-center" aria-label="記事を読む">記事を読む</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 記事ヘッダー -->
+    <article class="pt-32 pb-20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto">
+
+                <!-- カテゴリーバッジ -->
+                <div class="mb-4">
+                    <span class="inline-block bg-muted-red text-white text-sm px-4 py-2 rounded-full">温活</span>
+                </div>
+
+                <!-- タイトル -->
+                <h1 class="text-4xl md:text-5xl font-bold text-brown mb-6 leading-tight">
+                    管理栄養士が解説｜ホットヨガLAVAで冷え性は改善できる？体験前の栄養学的分析
+                </h1>
+
+                <!-- メタ情報 -->
+                <div class="flex items-center text-sm text-dark-gray mb-8">
+                    <time datetime="2026-03-22">2026年3月22日</time>
+                    <span class="mx-3">·</span>
+                    <span>7分で読める</span>
+                </div>
+
+                <!-- サマリーボックス -->
+                <div class="bg-cream rounded-2xl p-6 mb-10">
+                    <p class="text-lg leading-relaxed">
+                        <strong>この記事でわかること：</strong><br>
+                        管理栄養士の視点から、ホットヨガLAVAの温活効果を栄養学・生理学の観点で分析。室温38℃・湿度60%の環境が体温・血流・代謝に与える影響と、冷え性改善に期待できる根拠を解説します。
+                    </p>
+                    <p class="text-sm text-dark-gray mt-4">
+                        <i class="fa-solid fa-circle-info mr-2 text-muted-red"></i>
+                        ※筆者は近日中にLAVAの体験レッスンに参加予定。実際の体験レポートは後日追記します。
+                    </p>
+                </div>
+
+                <!-- 目次 -->
+                <div class="bg-white rounded-2xl p-6 mb-10">
+                    <h2 class="text-xl font-bold text-brown mb-4">目次</h2>
+                    <ol class="space-y-2 text-dark-gray">
+                        <li><a href="#why-cold" class="hover:text-muted-red transition">1. なぜ冷え性になるのか？管理栄養士が解説する3つの原因</a></li>
+                        <li><a href="#hot-yoga-mechanism" class="hover:text-muted-red transition">2. ホットヨガが体温を上げるメカニズム</a></li>
+                        <li><a href="#lava-features" class="hover:text-muted-red transition">3. LAVAの環境設定（室温38℃・湿度60%）の根拠</a></li>
+                        <li><a href="#expected-benefits" class="hover:text-muted-red transition">4. 冷え性改善に期待できる3つの効果</a></li>
+                        <li><a href="#nutrition-tips" class="hover:text-muted-red transition">5. 管理栄養士が教える：ホットヨガ前後の栄養補給</a></li>
+                        <li><a href="#conclusion" class="hover:text-muted-red transition">6. まとめ：LAVAで冷え性改善は可能か？</a></li>
+                    </ol>
+                </div>
+
+                <!-- 本文 -->
+                <div class="prose prose-lg max-w-none">
+
+                    <!-- セクション1 -->
+                    <section id="why-cold" class="mb-12">
+                        <h2 class="text-3xl font-bold text-brown mb-6">なぜ冷え性になるのか？管理栄養士が解説する3つの原因</h2>
+
+                        <p class="mb-6 leading-relaxed">
+                            「足先が冷たくて眠れない」「夏でも靴下が手放せない」――そんな冷え性の悩み、実は<strong>基礎代謝の低下・血流不足・自律神経の乱れ</strong>の3つが主な原因です。
+                        </p>
+
+                        <div class="bg-white rounded-2xl p-6 mb-6">
+                            <h3 class="text-xl font-bold text-brown mb-4">冷え性の3大原因</h3>
+                            <ul class="space-y-4">
+                                <li>
+                                    <strong class="text-muted-red">1. 基礎代謝の低下</strong><br>
+                                    <span class="text-dark-gray">筋肉量の減少により、体内で熱を作る力が弱まる。20代をピークに毎年1%ずつ代謝が落ちる。</span>
+                                </li>
+                                <li>
+                                    <strong class="text-muted-red">2. 血流不足</strong><br>
+                                    <span class="text-dark-gray">デスクワーク・運動不足により、血液が手足の末端まで届かない。特にふくらはぎの筋ポンプ機能の低下が顕著。</span>
+                                </li>
+                                <li>
+                                    <strong class="text-muted-red">3. 自律神経の乱れ</strong><br>
+                                    <span class="text-dark-gray">ストレス・睡眠不足により、体温調節機能が正常に働かない。交感神経優位→血管収縮→冷えの悪循環。</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <p class="leading-relaxed">
+                            これらの原因に対して、<strong>ホットヨガは「温熱環境 × 運動 × 呼吸法」の3つのアプローチで同時にアプローチできる</strong>点が特徴です。
+                        </p>
+                    </section>
+
+                    <!-- セクション2 -->
+                    <section id="hot-yoga-mechanism" class="mb-12">
+                        <h2 class="text-3xl font-bold text-brown mb-6">ホットヨガが体温を上げるメカニズム</h2>
+
+                        <p class="mb-6 leading-relaxed">
+                            ホットヨガの温活効果は、以下の3つの生理学的メカニズムで説明できます。
+                        </p>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div class="bg-cream rounded-2xl p-6">
+                                <div class="text-4xl mb-3 text-muted-red">
+                                    <i class="fa-solid fa-temperature-high"></i>
+                                </div>
+                                <h3 class="text-lg font-bold text-brown mb-2">温熱刺激</h3>
+                                <p class="text-sm text-dark-gray">
+                                    室温38℃の環境により、皮膚温が上昇→血管拡張→全身の血流量が増加。
+                                </p>
+                            </div>
+
+                            <div class="bg-cream rounded-2xl p-6">
+                                <div class="text-4xl mb-3 text-muted-red">
+                                    <i class="fa-solid fa-dumbbell"></i>
+                                </div>
+                                <h3 class="text-lg font-bold text-brown mb-2">筋肉運動</h3>
+                                <p class="text-sm text-dark-gray">
+                                    ヨガポーズにより、インナーマッスルが活性化→基礎代謝UP→熱産生量が増加。
+                                </p>
+                            </div>
+
+                            <div class="bg-cream rounded-2xl p-6">
+                                <div class="text-4xl mb-3 text-muted-red">
+                                    <i class="fa-solid fa-wind"></i>
+                                </div>
+                                <h3 class="text-lg font-bold text-brown mb-2">深呼吸</h3>
+                                <p class="text-sm text-dark-gray">
+                                    腹式呼吸により、副交感神経が優位に→自律神経のバランスが整う→体温調節機能が正常化。
+                                </p>
+                            </div>
+                        </div>
+
+                        <p class="leading-relaxed">
+                            通常のヨガと違い、<strong>高温多湿の環境で行うことで、より効率的に体温上昇・発汗・デトックスが促進される</strong>のがホットヨガの特徴です。
+                        </p>
+                    </section>
+
+                    <!-- セクション3 -->
+                    <section id="lava-features" class="mb-12">
+                        <h2 class="text-3xl font-bold text-brown mb-6">LAVAの環境設定（室温38℃・湿度60%）の根拠</h2>
+
+                        <p class="mb-6 leading-relaxed">
+                            LAVAでは、室温を38℃・湿度を55〜65%に設定しています。この数値には、生理学的な根拠があります。
+                        </p>
+
+                        <div class="bg-white rounded-2xl p-6 mb-6">
+                            <h3 class="text-xl font-bold text-brown mb-4">なぜ室温38℃なのか？</h3>
+                            <p class="text-dark-gray mb-4">
+                                人間の深部体温は約37℃。<strong>室温38℃は、体温よりわずかに高い温度設定</strong>です。これにより：
+                            </p>
+                            <ul class="list-disc list-inside space-y-2 text-dark-gray ml-4">
+                                <li>体温が上昇しやすく、血管拡張が促進される</li>
+                                <li>熱中症リスクを抑えつつ、発汗を促せる</li>
+                                <li>運動強度が低くても、十分な温熱効果が得られる</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white rounded-2xl p-6 mb-6">
+                            <h3 class="text-xl font-bold text-brown mb-4">なぜ湿度60%なのか？</h3>
+                            <p class="text-dark-gray mb-4">
+                                湿度が高すぎると汗が蒸発しにくく、体温が下がりません。<strong>湿度60%前後は、発汗と蒸発のバランスが最適</strong>な環境です。
+                            </p>
+                            <ul class="list-disc list-inside space-y-2 text-dark-gray ml-4">
+                                <li>適度な発汗により、デトックス効果が高まる</li>
+                                <li>呼吸がしやすく、深い呼吸を維持できる</li>
+                                <li>肌の乾燥を防ぎ、美容効果も期待できる</li>
+                            </ul>
+                        </div>
+
+                        <p class="leading-relaxed">
+                            この環境設定は、<strong>初心者でも安全に、かつ効果的に温活できるよう設計されている</strong>と言えます。
+                        </p>
+                    </section>
+
+                    <!-- セクション4 -->
+                    <section id="expected-benefits" class="mb-12">
+                        <h2 class="text-3xl font-bold text-brown mb-6">冷え性改善に期待できる3つの効果</h2>
+
+                        <p class="mb-6 leading-relaxed">
+                            管理栄養士の視点から、LAVAのホットヨガで期待できる効果を3つ挙げます。
+                        </p>
+
+                        <div class="space-y-6">
+                            <div class="bg-cream rounded-2xl p-6">
+                                <h3 class="text-xl font-bold text-brown mb-3">
+                                    <span class="text-muted-red mr-2">1.</span>基礎代謝の向上
+                                </h3>
+                                <p class="text-dark-gray leading-relaxed">
+                                    ホットヨガは<strong>インナーマッスルを鍛える</strong>ため、筋肉量が増加します。筋肉1kgあたり、1日約13kcalの基礎代謝が上がるため、<strong>継続することで「熱を作りやすい体」</strong>に変わります。
+                                </p>
+                            </div>
+
+                            <div class="bg-cream rounded-2xl p-6">
+                                <h3 class="text-xl font-bold text-brown mb-3">
+                                    <span class="text-muted-red mr-2">2.</span>血流改善
+                                </h3>
+                                <p class="text-dark-gray leading-relaxed">
+                                    温熱刺激により血管が拡張し、<strong>末梢血流量が増加</strong>します。特に、ふくらはぎの筋肉を使うポーズが多いため、<strong>「第二の心臓」と呼ばれる筋ポンプ機能が活性化</strong>され、足先の冷えに効果的です。
+                                </p>
+                            </div>
+
+                            <div class="bg-cream rounded-2xl p-6">
+                                <h3 class="text-xl font-bold text-brown mb-3">
+                                    <span class="text-muted-red mr-2">3.</span>自律神経の調整
+                                </h3>
+                                <p class="text-dark-gray leading-relaxed">
+                                    腹式呼吸を意識的に行うことで、<strong>副交感神経が優位になり、リラックス状態に</strong>。ストレス性の冷え性（交感神経優位→血管収縮）の改善に期待できます。
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- セクション5 -->
+                    <section id="nutrition-tips" class="mb-12">
+                        <h2 class="text-3xl font-bold text-brown mb-6">管理栄養士が教える：ホットヨガ前後の栄養補給</h2>
+
+                        <p class="mb-6 leading-relaxed">
+                            ホットヨガの効果を最大化するには、<strong>レッスン前後の栄養補給</strong>が重要です。
+                        </p>
+
+                        <div class="bg-white rounded-2xl p-6 mb-6">
+                            <h3 class="text-xl font-bold text-brown mb-4">レッスン前（2時間前まで）</h3>
+                            <ul class="space-y-3 text-dark-gray">
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-circle-check text-muted-red mr-3 mt-1"></i>
+                                    <div>
+                                        <strong>消化の良い炭水化物</strong>を摂る<br>
+                                        <span class="text-sm">例：バナナ、おにぎり、食パン1枚<br>理由：エネルギー源として、運動中の低血糖を防ぐ</span>
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-circle-check text-muted-red mr-3 mt-1"></i>
+                                    <div>
+                                        <strong>水分補給</strong>を忘れずに<br>
+                                        <span class="text-sm">レッスン1時間前までに、コップ1〜2杯（200〜400ml）の水を飲む</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white rounded-2xl p-6 mb-6">
+                            <h3 class="text-xl font-bold text-brown mb-4">レッスン中</h3>
+                            <ul class="space-y-3 text-dark-gray">
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-circle-check text-muted-red mr-3 mt-1"></i>
+                                    <div>
+                                        <strong>こまめな水分補給</strong><br>
+                                        <span class="text-sm">目安：500ml〜1L<br>発汗量が多いため、のどが渇く前に飲む習慣をつける</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white rounded-2xl p-6 mb-6">
+                            <h3 class="text-xl font-bold text-brown mb-4">レッスン後（30分以内）</h3>
+                            <ul class="space-y-3 text-dark-gray">
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-circle-check text-muted-red mr-3 mt-1"></i>
+                                    <div>
+                                        <strong>タンパク質 + 炭水化物</strong>を摂る<br>
+                                        <span class="text-sm">例：プロテインドリンク、豆乳、ギリシャヨーグルト + フルーツ<br>理由：筋肉の回復・基礎代謝UPのため</span>
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-circle-check text-muted-red mr-3 mt-1"></i>
+                                    <div>
+                                        <strong>ミネラル補給</strong><br>
+                                        <span class="text-sm">発汗により、ナトリウム・カリウムが失われるため、スポーツドリンクや塩分を含む食事を</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-muted-red text-white rounded-2xl p-6">
+                            <p class="font-bold mb-2">
+                                <i class="fa-solid fa-lightbulb mr-2"></i>管理栄養士のワンポイント
+                            </p>
+                            <p class="text-sm leading-relaxed">
+                                ホットヨガ後は、体が栄養を吸収しやすい「ゴールデンタイム」。高カロリーな食事は避け、<strong>タンパク質と野菜中心の食事</strong>を心がけましょう。温活効果を高めるには、生姜・ニンニク・唐辛子などの<strong>体を温める食材</strong>を取り入れるのもおすすめです。
+                            </p>
+                        </div>
+                    </section>
+
+                    <!-- セクション6 -->
+                    <section id="conclusion" class="mb-12">
+                        <h2 class="text-3xl font-bold text-brown mb-6">まとめ：LAVAで冷え性改善は可能か？</h2>
+
+                        <p class="mb-6 leading-relaxed">
+                            管理栄養士の視点から分析すると、<strong>LAVAのホットヨガは、冷え性改善に科学的根拠のあるアプローチ</strong>と言えます。
+                        </p>
+
+                        <div class="bg-cream rounded-2xl p-6 mb-8">
+                            <h3 class="text-xl font-bold text-brown mb-4">期待できる効果（まとめ）</h3>
+                            <ul class="space-y-2 text-dark-gray">
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-check text-muted-red mr-3 mt-1"></i>
+                                    <span><strong>基礎代謝UP</strong> → 熱を作りやすい体に</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-check text-muted-red mr-3 mt-1"></i>
+                                    <span><strong>血流改善</strong> → 手足の末端まで温かく</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-check text-muted-red mr-3 mt-1"></i>
+                                    <span><strong>自律神経調整</strong> → ストレス性冷え性の改善</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <p class="mb-6 leading-relaxed">
+                            ただし、<strong>1回の体験で劇的に改善するわけではありません</strong>。週2〜3回、最低3ヶ月は継続することで、体質の変化を実感できると考えられます。
+                        </p>
+
+                        <div class="bg-white rounded-2xl p-6 mb-8">
+                            <p class="text-dark-gray leading-relaxed">
+                                <i class="fa-solid fa-circle-info mr-2 text-muted-red"></i>
+                                <strong>筆者の今後の予定：</strong><br>
+                                近日中に、実際にLAVAの体験レッスンに参加します。レッスン前後の体温変化、発汗量、体感などを記録し、後日この記事に追記します。リアルな体験レポートをお楽しみに。
+                            </p>
+                        </div>
+                    </section>
+
+                    <!-- CTA -->
+                    <div class="bg-gradient-to-br from-muted-red to-red-400 text-white rounded-2xl p-8 text-center">
+                        <h3 class="text-2xl font-bold mb-4">LAVAの体験レッスンを受けてみる</h3>
+                        <p class="mb-6 leading-relaxed">
+                            手ぶらで参加OK・当日予約可能<br>
+                            体験レッスン料：0円〜150円（店舗・キャンペーンにより変動）
+                        </p>
+                        <a href="#" class="inline-block bg-white text-muted-red font-bold py-4 px-8 rounded-full hover:bg-off-white transition text-lg">
+                            体験レッスンを予約する →
+                        </a>
+                        <p class="text-sm mt-4 opacity-80">
+                            ※公式サイトに移動します
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </article>
+
+    <!-- 関連記事 -->
+    <section class="py-20 bg-cream">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-brown text-center mb-12">
+                関連記事
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                <!-- 記事カード1 -->
+                <article class="article-card">
+                    <a href="article-yomogi-review.html" aria-label="よもぎ蒸しで温活｜管理栄養士が解説する温活効果を読む">
+                        <div class="thumbnail bg-gradient-to-br from-green-100 to-teal-100">
+                            <i class="fa-solid fa-spa text-green-600" aria-hidden="true"></i>
+                        </div>
+                        <span class="badge">温活</span>
+                        <h3>よもぎ蒸しで温活｜管理栄養士が解説する温活効果</h3>
+                        <p class="read-time">6分で読める</p>
+                    </a>
+                </article>
+
+                <!-- 記事カード2 -->
+                <article class="article-card">
+                    <a href="article-chef-tsukurioki.html" aria-label="忙しいママのための無添加つくりおき｜管理栄養士が選ぶ理由を読む">
+                        <div class="thumbnail bg-gradient-to-br from-orange-100 to-yellow-100">
+                            <i class="fa-solid fa-bowl-rice text-orange-600" aria-hidden="true"></i>
+                        </div>
+                        <span class="badge">食事</span>
+                        <h3>忙しいママのための無添加つくりおき｜管理栄養士が選ぶ理由</h3>
+                        <p class="read-time">5分で読める</p>
+                    </a>
+                </article>
+
+                <!-- 記事カード3 -->
+                <article class="article-card">
+                    <a href="index.html#articles" aria-label="トップの記事一覧へ">
+                        <div class="thumbnail bg-gradient-to-br from-red-100 to-orange-100">
+                            <i class="fa-solid fa-list text-muted-red" aria-hidden="true"></i>
+                        </div>
+                        <span class="badge">一覧</span>
+                        <h3>ほかの記事も見る（トップの記事一覧）</h3>
+                        <p class="read-time">LAVA・よもぎ・つくりおきなど</p>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="bg-brown text-off-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                <div>
+                    <img src="images/logo.svg" alt="リンゴラボ" class="footer-logo mb-4" />
+                    <p class="text-sm opacity-80">
+                        管理栄養士りんちゃんが教える、<br>
+                        整える習慣
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">カテゴリー</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-muted-red transition">温活</a></li>
+                        <li><a href="#" class="hover:text-muted-red transition">美容</a></li>
+                        <li><a href="#" class="hover:text-muted-red transition">食事</a></li>
+                    </ul>
+                </div>
+                <div class="md:col-span-2">
+                    <h4 class="font-bold mb-3">メニュー</h4>
+                    <ul class="flex flex-wrap gap-x-5 gap-y-2 text-sm">
+                        <li><a href="index.html#about" class="hover:text-muted-red transition">リンゴラボについて</a></li>
+                        <li><a href="product-tea.html" class="hover:text-muted-red transition">商品</a></li>
+                        <li><a href="app-health.html" class="hover:text-muted-red transition">アプリ</a></li>
+                        <li><a href="index.html#articles" class="hover:text-muted-red transition">記事</a></li>
+                        <li><a href="index.html#profile" class="hover:text-muted-red transition">プロフィール</a></li>
+                        <li><a href="#" class="hover:text-muted-red transition">プライバシーポリシー</a></li>
+                        <li><a href="#" class="hover:text-muted-red transition">お問い合わせ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center text-sm opacity-60 pt-8 border-t border-off-white/20">
+                © 2026 Studio Jinsei. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // モバイルハンバーガーメニュー
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+
+            if (isExpanded) {
+                mobileMenu.classList.add('hidden');
+                mobileMenuButton.setAttribute('aria-expanded', 'false');
+                mobileMenuButton.setAttribute('aria-label', 'メニューを開く');
+                mobileMenuButton.innerHTML = '<i class="fa-solid fa-bars"></i>';
+            } else {
+                mobileMenu.classList.remove('hidden');
+                mobileMenuButton.setAttribute('aria-expanded', 'true');
+                mobileMenuButton.setAttribute('aria-label', 'メニューを閉じる');
+                mobileMenuButton.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+            }
+        });
+
+        // スムーススクロール時にモバイルメニューを閉じる
+        const menuLinks = document.querySelectorAll('#mobile-menu a');
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenuButton.setAttribute('aria-expanded', 'false');
+                    mobileMenuButton.setAttribute('aria-label', 'メニューを開く');
+                    mobileMenuButton.innerHTML = '<i class="fa-solid fa-bars"></i>';
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

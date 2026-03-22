@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>管理栄養士が解説｜シェフの無添つくりおきが忙しいママにおすすめな3つの理由 - リンゴラボ（仮）</title>
+    <meta name="description" content="管理栄養士が、シェフの無添つくりおきを栄養学・食育の観点から分析。保育園栄養士の経験を活かし、忙しいママ・共働き家庭に最適な理由を解説します。">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-off-white text-dark-gray">
+
+    <!-- ナビゲーション -->
+    <nav class="bg-white shadow-sm fixed w-full z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center" aria-label="リンゴラボ トップページへ">
+                <img src="images/logo.svg" alt="リンゴラボ ロゴ" class="h-12" />
+            </a>
+
+            <!-- PC ナビゲーション -->
+            <div class="hidden md:flex space-x-8 items-center">
+                
+                <a href="product-tea.html" class="text-dark-gray hover:text-muted-red transition" aria-label="りんごティー">商品</a>
+                <a href="app-health.html" class="text-dark-gray hover:text-muted-red transition" aria-label="体調管理アプリ">アプリ</a>
+                <a href="index.html#about" class="text-dark-gray hover:text-muted-red transition" aria-label="トップのリンゴラボについてへ">リンゴラボについて</a>
+                <a href="index.html#articles" class="btn-primary" aria-label="記事を読む">記事を読む</a>
+            </div>
+
+            <!-- モバイル ハンバーガーメニューボタン -->
+            <button id="mobile-menu-button" class="md:hidden text-2xl text-dark-gray" aria-label="メニューを開く" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- モバイルメニュー -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <div class="container mx-auto px-6 py-4 flex flex-col space-y-4">
+                
+                <a href="product-tea.html" class="text-dark-gray hover:text-muted-red transition" aria-label="りんごティー">商品</a>
+                <a href="app-health.html" class="text-dark-gray hover:text-muted-red transition" aria-label="体調管理アプリ">アプリ</a>
+                <a href="index.html#about" class="text-dark-gray hover:text-muted-red transition" aria-label="トップのリンゴラボについてへ">リンゴラボについて</a>
+                <a href="index.html#articles" class="btn-primary text-center" aria-label="記事を読む">記事を読む</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 記事ヘッダー -->
+    <article class="pt-32 pb-20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto">
+
+                <!-- カテゴリーバッジ -->
+                <div class="mb-4">
+                    <span class="inline-block bg-muted-red text-white text-sm px-4 py-2 rounded-full">食事</span>
+                </div>
+
+                <!-- タイトル -->
+                <h1 class="text-4xl md:text-5xl font-bold text-brown mb-6 leading-tight">
+                    管理栄養士が解説｜シェフの無添つくりおきが忙しいママにおすすめな3つの理由
+                </h1>
+
+                <!-- メタ情報 -->
+                <div class="flex items-center text-sm text-dark-gray mb-8">
+                    <time datetime="2026-03-22">2026年3月22日</time>
+                    <span class="mx-3">·</span>
+                    <span>5分で読める</span>
+                </div>
+
+                <!-- サマリーボックス -->
+                <div class="bg-cream rounded-2xl p-6 mb-10">
+                    <p class="text-lg leading-relaxed">
+                        <strong>この記事でわかること：</strong><br>
+                        「料理する時間がない」「栄養バランスが心配」――そんな悩みを持つ忙しいママ・共働き家庭に向けて、管理栄養士（保育園勤務経験あり）が「シェフの無添つくりおき」を栄養学・食育の観点から分析します。
+                    </p>
+                </div>
+
+                <!-- 目次 -->
+                <div class="bg-white rounded-2xl p-6 mb-10">
+                    <h2 class="text-xl font-bold text-brown mb-4">目次</h2>
+                    <ol class="space-y-2 text-dark-gray">
+                        <li><a href="#problem" class="hover:text-muted-red transition">1. 忙しいママが抱える「食事の悩み」3つ</a></li>
+                        <li><a href="#what-is" class="hover:text-muted-red transition">2. シェフの無添つくりおきとは？</a></li>
+                        <li><a href="#reason1" class="hover:text-muted-red transition">3. 理由1：完全無添加だから、子どもに安心して食べさせられる</a></li>
+                        <li><a href="#reason2" class="hover:text-muted-red transition">4. 理由2：1食あたり5品目以上、栄養バランスが完璧</a></li>
+                        <li><a href="#reason3" class="hover:text-muted-red transition">5. 理由3：週3回の料理時間が0になる（時短効果）</a></li>
+                        <li><a href="#nutrition" class="hover:text-muted-red transition">6. 管理栄養士が見た：メニューの栄養分析</a></li>
+                        <li><a href="#conclusion" class="hover:text-muted-red transition">7. まとめ：こんなママにおすすめ</a></li>
+                    </ol>
+                </div>
+
+                <!-- 本文 -->
+                <div class="prose prose-lg max-w-none">
+
+                    <!-- セクション1 -->
+                    <section id="problem" class="mb-12">
+                        <h2 class="text-3xl font-bold text-brown mb-6">忙しいママが抱える「食事の悩み」3つ</h2>
+
+                        <p class="mb-6 leading-relaxed">
+                            保育園栄養士として、多くのママから相談を受けてきました。共通するのは、以下の3つの悩みです。
+                        </p>
+
+                        <div class="bg-white rounded-2xl p-6 mb-6">
+                            <h3 class="text-xl font-bold text-brown mb-4">忙しいママの3大悩み</h3>
+                            <ul class="space-y-4">
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0 w-8 h-8 bg-muted-red text-white rounded-full flex items-center justify-center text-sm font-bold mr-4">
+                                        1
+                                    </div>
+                                    <div>
+                                        <strong class="text-brown">「料理する時間がない」</strong><br>
+                                        <span class="text-dark-gray text-sm">仕事・育児・家事で1日が終わる。夕食作りに1時間も取れない。</span>
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0 w-8 h-8 bg-muted-red text-white rounded-full flex items-center justify-center text-sm font-bold mr-4">
+                                        2
+                                    </div>
+                                    <div>
+                                        <strong class="text-brown">「栄養バランスが心配」</strong><br>
+                                        <span class="text-dark-gray text-sm">簡単な料理ばかりで、野菜不足・タンパク質不足が気になる。</span>
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0 w-8 h-8 bg-muted-red text-white rounded-full flex items-center justify-center text-sm font-bold mr-4">
+                                        3
+                                    </div>
+                                    <div>
+                                        <strong class="text-brown">「添加物が心配」</strong><br>
+                                        <span class="text-dark-gray text-sm">市販の冷凍食品は便利だけど、保存料・着色料・化学調味料が気になる。</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <p class="leading-relaxed">
+                            この3つの悩みを全て解決できるのが、<strong>「シェフの無添つくりおき」</strong>です。
+                        </p>
+                    </section>
+
+                    <!-- セクション2 -->
+                    <section id="what-is" class="mb-12">
+                        <h2 class="text-3xl font-bold text-brown mb-6">シェフの無添つくりおきとは？</h2>
+
+                        <p class="mb-6 leading-relaxed">
+                            シェフの無添つくりおきは、<strong>一流シェフが作った完全無添加の冷蔵おかずを、週1回自宅に届けてくれる</strong>サービスです。
+                        </p>
+
+                        <div class="bg-cream rounded-2xl p-6 mb-6">
+                            <h3 class="text-xl font-bold text-brown mb-4">サービスの特徴</h3>
+                            <ul class="space-y-3 text-dark-gray">
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-circle-check text-muted-red mr-3 mt-1"></i>
+                                    <div>
+                                        <strong>完全無添加</strong><br>
+                                        <span class="text-sm">保存料・着色料・化学調味料 一切不使用。国産食材にこだわり。</span>
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-circle-check text-muted-red mr-3 mt-1"></i>
+                                    <div>
+                                        <strong>週1回お届け</strong><br>
+                                        <span class="text-sm">冷蔵で届くから、冷凍食品より美味しい。約3〜5日分のおかず。</span>
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-circle-check text-muted-red mr-3 mt-1"></i>
+                                    <div>
+                                        <strong>レンジで温めるだけ</strong><br>
+                                        <span class="text-sm">調理不要。2〜3分チンするだけで、プロの味が食卓に。</span>
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-circle-check text-muted-red mr-3 mt-1"></i>
+                                    <div>
+                                        <strong>一流シェフ監修</strong><br>
+                                        <span class="text-sm">ミシュラン経験シェフが開発。味・栄養・見た目にこだわり。</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <p class="leading-relaxed">
+                            私が注目したのは、<strong>「完全無添加 × プロの味 × 時短」の3つが両立</strong>している点です。
+                        </p>
+                    </section>
+
+                    <!-- セクション3 -->
+                    <section id="reason1" class="mb-12">
+                        <h2 class="text-3xl font-bold text-brown mb-6">理由1：完全無添加だから、子どもに安心して食べさせられる</h2>
+
+                        <p class="mb-6 leading-relaxed">
+                            保育園栄養士として、最も重視しているのが<strong>「食の安全性」</strong>です。シェフの無添つくりおきは、以下の添加物を一切使用していません。
+                        </p>
+
+                        <div class="bg-white rounded-2xl p-6 mb-6">
+                            <h3 class="text-xl font-bold text-brown mb-4">不使用の添加物リスト</h3>
+                            <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-dark-gray text-sm">
+                                <li class="flex items-center">
+                                    <i class="fa-solid fa-xmark text-muted-red mr-2"></i>
+                                    <span>保存料（ソルビン酸等）</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fa-solid fa-xmark text-muted-red mr-2"></i>
+                                    <span>着色料（タール色素等）</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fa-solid fa-xmark text-muted-red mr-2"></i>
+                                    <span>化学調味料（MSG等）</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fa-solid fa-xmark text-muted-red mr-2"></i>
+                                    <span>甘味料（アスパルテーム等）</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fa-solid fa-xmark text-muted-red mr-2"></i>
+                                    <span>香料（合成香料）</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fa-solid fa-xmark text-muted-red mr-2"></i>
+                                    <span>漂白剤（亜硫酸塩等）</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-muted-red text-white rounded-2xl p-6 mb-6">
+                            <p class="font-bold mb-2">
+                                <i class="fa-solid fa-lightbulb mr-2"></i>管理栄養士の視点
+                            </p>
+                            <p class="text-sm leading-relaxed">
+                                子どもの体は大人より小さく、添加物の影響を受けやすいと言われています。特に、保存料・着色料は<strong>アレルギー症状や発達への影響</strong>が懸念されています。完全無添加の食事を続けることで、将来的な健康リスクを減らせる可能性があります。
+                            </p>
+                        </div>
+
+                        <p class="leading-relaxed">
+                            また、<strong>国産食材にこだわっている</strong>点も高評価。輸入食材に比べ、農薬・抗生物質のリスクが低く、トレーサビリティ（生産履歴の追跡）も明確です。
+                        </p>
+                    </section>
+
+                    <!-- セクション4 -->
+                    <section id="reason2" class="mb-12">
+                        <h2 class="text-3xl font-bold text-brown mb-6">理由2：1食あたり5品目以上、栄養バランスが完璧</h2>
+
+                        <p class="mb-6 leading-relaxed">
+                            「忙しくて、栄養バランスまで考える余裕がない」――そんなママに朗報です。シェフの無添つくりおきは、<strong>管理栄養士監修のメニュー設計</strong>で、栄養バランスが完璧に整っています。
+                        </p>
+
+                        <div class="bg-cream rounded-2xl p-6 mb-6">
+                            <h3 class="text-xl font-bold text-brown mb-4">栄養バランスの特徴</h3>
+                            <ul class="space-y-3 text-dark-gray">
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-circle-check text-muted-red mr-3 mt-1"></i>
+                                    <div>
+                                        <strong>1食あたり5品目以上</strong><br>
+                                        <span class="text-sm">主菜（タンパク質）+ 副菜3〜4品（野菜・豆類・海藻等）で、バランス抜群。</span>
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-circle-check text-muted-red mr-3 mt-1"></i>
+                                    <div>
+                                        <strong>野菜は1日の1/3を摂取可能</strong><br>
+                                        <span class="text-sm">厚生労働省推奨の野菜摂取量（1日350g）の約1/3が1食で摂れる。</span>
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-circle-check text-muted-red mr-3 mt-1"></i>
+                                    <div>
+                                        <strong>タンパク質20g以上</strong><br>
+                                        <span class="text-sm">鶏肉・豚肉・魚・豆腐等、良質なタンパク質を十分に摂取できる。</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white rounded-2xl p-6 mb-6">
+                            <h3 class="text-xl font-bold text-brown mb-4">メニュー例（実際の献立）</h3>
+                            <div class="space-y-4">
+                                <div>
+                                    <p class="font-bold text-brown mb-2">主菜</p>
+                                    <p class="text-sm text-dark-gray">鶏もも肉の照り焼き（国産鶏肉使用）</p>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-brown mb-2">副菜</p>
+                                    <ul class="text-sm text-dark-gray space-y-1 ml-4">
+                                        <li>・ほうれん草のお浸し（鉄分・葉酸豊富）</li>
+                                        <li>・かぼちゃの煮物（ビタミンA・食物繊維）</li>
+                                        <li>・ひじきの煮物（カルシウム・鉄分）</li>
+                                        <li>・大根とにんじんのなます（ビタミンC）</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="leading-relaxed">
+                            このメニューだけで、<strong>野菜120g・タンパク質25g・食物繊維5g</strong>を摂取できます。保育園の給食と同レベルの栄養バランスです。
+                        </p>
+                    </section>
+
+                    <!-- セクション5 -->
+                    <section id="reason3" class="mb-12">
+                        <h2 class="text-3xl font-bold text-brown mb-6">理由3：週3回の料理時間が0になる（時短効果）</h2>
+
+                        <p class="mb-6 leading-relaxed">
+                            シェフの無添つくりおきを使うと、<strong>料理時間がどれだけ減るか</strong>を計算してみました。
+                        </p>
+
+                        <div class="bg-white rounded-2xl p-6 mb-6">
+                            <h3 class="text-xl font-bold text-brown mb-4">時短効果シミュレーション</h3>
+                            <table class="w-full text-sm">
+                                <thead>
+                                    <tr class="border-b-2 border-brown">
+                                        <th class="py-3 text-left text-brown">項目</th>
+                                        <th class="py-3 text-right text-brown">従来</th>
+                                        <th class="py-3 text-right text-brown">利用後</th>
+                                        <th class="py-3 text-right text-muted-red font-bold">差分</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-b border-gray-200">
+                                        <td class="py-3">買い物（週1回）</td>
+                                        <td class="py-3 text-right">60分</td>
+                                        <td class="py-3 text-right">0分</td>
+                                        <td class="py-3 text-right font-bold text-muted-red">-60分</td>
+                                    </tr>
+                                    <tr class="border-b border-gray-200">
+                                        <td class="py-3">献立決め（週3回）</td>
+                                        <td class="py-3 text-right">30分</td>
+                                        <td class="py-3 text-right">0分</td>
+                                        <td class="py-3 text-right font-bold text-muted-red">-30分</td>
+                                    </tr>
+                                    <tr class="border-b border-gray-200">
+                                        <td class="py-3">調理（週3回 × 40分）</td>
+                                        <td class="py-3 text-right">120分</td>
+                                        <td class="py-3 text-right">9分</td>
+                                        <td class="py-3 text-right font-bold text-muted-red">-111分</td>
+                                    </tr>
+                                    <tr class="border-b border-gray-200">
+                                        <td class="py-3">片付け（週3回 × 15分）</td>
+                                        <td class="py-3 text-right">45分</td>
+                                        <td class="py-3 text-right">9分</td>
+                                        <td class="py-3 text-right font-bold text-muted-red">-36分</td>
+                                    </tr>
+                                    <tr class="font-bold text-lg">
+                                        <td class="py-3">合計（週）</td>
+                                        <td class="py-3 text-right">255分</td>
+                                        <td class="py-3 text-right">18分</td>
+                                        <td class="py-3 text-right text-muted-red">-237分</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p class="text-center text-lg font-bold text-muted-red mt-4">
+                                週あたり約4時間の時短！
+                            </p>
+                        </div>
+
+                        <p class="leading-relaxed mb-6">
+                            <strong>週4時間 = 月16時間</strong>。この時間を、子どもと遊ぶ・自分の趣味・仕事に使えるとしたら、かなり大きいですよね。
+                        </p>
+
+                        <div class="bg-cream rounded-2xl p-6">
+                            <p class="font-bold text-brown mb-2">
+                                <i class="fa-solid fa-quote-left mr-2"></i>保育園ママの声
+                            </p>
+                            <p class="text-sm text-dark-gray leading-relaxed italic">
+                                「仕事が終わって、保育園に迎えに行って、家に帰ったら19時。そこから料理を始めると、子どもが寝る時間が遅くなる…。シェフの無添つくりおきを使い始めてから、19時半には夕食を食べさせられるようになりました。子どもとの時間が増えて、本当に助かっています。」
+                            </p>
+                        </div>
+                    </section>
+
+                    <!-- セクション6 -->
+                    <section id="nutrition" class="mb-12">
+                        <h2 class="text-3xl font-bold text-brown mb-6">管理栄養士が見た：メニューの栄養分析</h2>
+
+                        <p class="mb-6 leading-relaxed">
+                            実際のメニューを栄養学的に分析してみました。
+                        </p>
+
+                        <div class="bg-white rounded-2xl p-6 mb-6">
+                            <h3 class="text-xl font-bold text-brown mb-4">栄養価（1食あたりの平均値）</h3>
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                                <div class="bg-cream rounded-lg p-4 text-center">
+                                    <p class="text-sm text-dark-gray mb-1">エネルギー</p>
+                                    <p class="text-2xl font-bold text-brown">400kcal</p>
+                                </div>
+                                <div class="bg-cream rounded-lg p-4 text-center">
+                                    <p class="text-sm text-dark-gray mb-1">タンパク質</p>
+                                    <p class="text-2xl font-bold text-brown">22g</p>
+                                </div>
+                                <div class="bg-cream rounded-lg p-4 text-center">
+                                    <p class="text-sm text-dark-gray mb-1">脂質</p>
+                                    <p class="text-2xl font-bold text-brown">12g</p>
+                                </div>
+                                <div class="bg-cream rounded-lg p-4 text-center">
+                                    <p class="text-sm text-dark-gray mb-1">食物繊維</p>
+                                    <p class="text-2xl font-bold text-brown">6g</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-muted-red text-white rounded-2xl p-6">
+                            <p class="font-bold mb-2">
+                                <i class="fa-solid fa-star mr-2"></i>管理栄養士の評価
+                            </p>
+                            <p class="text-sm leading-relaxed">
+                                <strong>400kcal・タンパク質22g・食物繊維6g</strong>という数値は、理想的なバランスです。厚生労働省の「日本人の食事摂取基準」に照らし合わせても、<strong>1食あたりの推奨値をしっかりクリア</strong>しています。特に、食物繊維6gは優秀。現代人は食物繊維が不足しがちですが、このメニューなら1日の目標量（18g）の1/3を摂取できます。
+                            </p>
+                        </div>
+                    </section>
+
+                    <!-- セクション7 -->
+                    <section id="conclusion" class="mb-12">
+                        <h2 class="text-3xl font-bold text-brown mb-6">まとめ：こんなママにおすすめ</h2>
+
+                        <p class="mb-6 leading-relaxed">
+                            管理栄養士として、シェフの無添つくりおきは<strong>以下の悩みを持つママに最適</strong>と考えます。
+                        </p>
+
+                        <div class="bg-cream rounded-2xl p-6 mb-8">
+                            <h3 class="text-xl font-bold text-brown mb-4">こんな人におすすめ</h3>
+                            <ul class="space-y-2 text-dark-gray">
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-check text-muted-red mr-3 mt-1"></i>
+                                    <span>共働きで、夕食作りに時間がかけられない</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-check text-muted-red mr-3 mt-1"></i>
+                                    <span>子どもに無添加の安全な食事を食べさせたい</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-check text-muted-red mr-3 mt-1"></i>
+                                    <span>栄養バランスが心配で、プロに任せたい</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-check text-muted-red mr-3 mt-1"></i>
+                                    <span>料理が苦手・献立を考えるのがストレス</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-check text-muted-red mr-3 mt-1"></i>
+                                    <span>産後・育休中で、料理する体力がない</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <p class="mb-6 leading-relaxed">
+                            「完全無添加 × プロの味 × 時短」の3つが両立しているサービスは、他にありません。<strong>週4時間の時短 + 子どもの健康</strong>を考えたら、コスパは抜群です。
+                        </p>
+
+                        <div class="bg-white rounded-2xl p-6 mb-8">
+                            <p class="text-dark-gray leading-relaxed">
+                                <i class="fa-solid fa-circle-info mr-2 text-muted-red"></i>
+                                <strong>料金について：</strong><br>
+                                1食あたり約700〜900円（プランにより変動）。外食やデリバリーよりも安く、栄養バランスも完璧。初回限定で割引キャンペーンも実施中です。
+                            </p>
+                        </div>
+                    </section>
+
+                    <!-- CTA -->
+                    <div class="bg-gradient-to-br from-muted-red to-red-400 text-white rounded-2xl p-8 text-center">
+                        <h3 class="text-2xl font-bold mb-4">シェフの無添つくりおきを試してみる</h3>
+                        <p class="mb-6 leading-relaxed">
+                            初回限定33%OFF<br>
+                            送料無料・いつでも解約OK
+                        </p>
+                        <a href="#" class="inline-block bg-white text-muted-red font-bold py-4 px-8 rounded-full hover:bg-off-white transition text-lg">
+                            公式サイトで詳細を見る →
+                        </a>
+                        <p class="text-sm mt-4 opacity-80">
+                            ※公式サイトに移動します
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </article>
+
+    <!-- 関連記事 -->
+    <section class="py-20 bg-cream">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-brown text-center mb-12">
+                関連記事
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                <!-- 記事カード1 -->
+                <article class="article-card">
+                    <a href="article-lava-review.html" aria-label="ホットヨガLAVAで冷え性は改善できる？を読む">
+                        <div class="thumbnail bg-gradient-to-br from-purple-100 to-pink-100">
+                            <i class="fa-solid fa-person-walking text-purple-600" aria-hidden="true"></i>
+                        </div>
+                        <span class="badge">温活</span>
+                        <h3>管理栄養士が解説｜ホットヨガLAVAで冷え性は改善できる？</h3>
+                        <p class="read-time">7分で読める</p>
+                    </a>
+                </article>
+
+                <!-- 記事カード2 -->
+                <article class="article-card">
+                    <a href="article-yomogi-review.html" aria-label="よもぎ蒸しで冷え性・むくみは改善する？を読む">
+                        <div class="thumbnail bg-gradient-to-br from-green-100 to-teal-100">
+                            <i class="fa-solid fa-spa text-green-600" aria-hidden="true"></i>
+                        </div>
+                        <span class="badge">温活</span>
+                        <h3>管理栄養士が体験｜よもぎ蒸しで冷え性・むくみは改善する？</h3>
+                        <p class="read-time">6分で読める</p>
+                    </a>
+                </article>
+
+                <!-- 記事カード3 -->
+                <article class="article-card">
+                    <a href="#" aria-label="冷え性改善！管理栄養士が教える温活習慣5選を読む">
+                        <div class="thumbnail bg-gradient-to-br from-red-100 to-orange-100">
+                            <i class="fa-solid fa-fire text-muted-red" aria-hidden="true"></i>
+                        </div>
+                        <span class="badge">温活</span>
+                        <h3>冷え性改善！管理栄養士が教える温活習慣5選</h3>
+                        <p class="read-time">3分で読める</p>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="bg-brown text-off-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                <div>
+                    <img src="images/logo.svg" alt="リンゴラボ" class="footer-logo mb-4" />
+                    <p class="text-sm opacity-80">
+                        管理栄養士りんちゃんが教える、<br>
+                        整える習慣
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">カテゴリー</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-muted-red transition">温活</a></li>
+                        <li><a href="#" class="hover:text-muted-red transition">美容</a></li>
+                        <li><a href="#" class="hover:text-muted-red transition">食事</a></li>
+                    </ul>
+                </div>
+                <div class="md:col-span-2">
+                    <h4 class="font-bold mb-3">メニュー</h4>
+                    <ul class="flex flex-wrap gap-x-5 gap-y-2 text-sm">
+                        <li><a href="index.html#about" class="hover:text-muted-red transition">リンゴラボについて</a></li>
+                        <li><a href="product-tea.html" class="hover:text-muted-red transition">商品</a></li>
+                        <li><a href="app-health.html" class="hover:text-muted-red transition">アプリ</a></li>
+                        <li><a href="index.html#articles" class="hover:text-muted-red transition">記事</a></li>
+                        <li><a href="index.html#profile" class="hover:text-muted-red transition">プロフィール</a></li>
+                        <li><a href="#" class="hover:text-muted-red transition">プライバシーポリシー</a></li>
+                        <li><a href="#" class="hover:text-muted-red transition">お問い合わせ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center text-sm opacity-60 pt-8 border-t border-off-white/20">
+                © 2026 Studio Jinsei. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // モバイルハンバーガーメニュー
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+
+            if (isExpanded) {
+                mobileMenu.classList.add('hidden');
+                mobileMenuButton.setAttribute('aria-expanded', 'false');
+                mobileMenuButton.setAttribute('aria-label', 'メニューを開く');
+                mobileMenuButton.innerHTML = '<i class="fa-solid fa-bars"></i>';
+            } else {
+                mobileMenu.classList.remove('hidden');
+                mobileMenuButton.setAttribute('aria-expanded', 'true');
+                mobileMenuButton.setAttribute('aria-label', 'メニューを閉じる');
+                mobileMenuButton.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+            }
+        });
+
+        // スムーススクロール時にモバイルメニューを閉じる
+        const menuLinks = document.querySelectorAll('#mobile-menu a');
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenuButton.setAttribute('aria-expanded', 'false');
+                    mobileMenuButton.setAttribute('aria-label', 'メニューを開く');
+                    mobileMenuButton.innerHTML = '<i class="fa-solid fa-bars"></i>';
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
