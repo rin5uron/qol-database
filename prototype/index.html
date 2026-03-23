@@ -106,25 +106,27 @@
             <h2 class="text-3xl md:text-4xl font-bold text-brown text-center mb-4">リンゴラボのこと</h2>
             <p class="text-center text-dark-gray mb-12 text-sm md:text-base">記事・自社商品・アプリの3つを軸に、整えるヒントを届けています。</p>
             <div class="space-y-6">
-                <article class="card-feature text-left">
+                <article class="card-feature">
                     <div class="flex-1 min-w-0">
                         <h3 class="text-xl font-bold text-brown mb-2">記事発信</h3>
                         <p class="text-dark-gray text-sm md:text-base leading-relaxed mb-4">温活・美容・食事を、管理栄養士の視点とエビデンスをまじえて解説します。</p>
-                        <a href="#articles" class="text-muted-red hover:underline font-medium text-sm">記事一覧へ →</a>
+                        <div class="text-right">
+                            <a href="#articles" class="text-muted-red hover:underline font-medium text-sm">記事一覧へ →</a>
+                        </div>
                     </div>
                 </article>
                 <article class="card-feature text-left">
                     <div class="flex-1 min-w-0">
                         <h3 class="text-xl font-bold text-brown mb-2">自社商品</h3>
-                        <p class="text-dark-gray text-sm md:text-base leading-relaxed mb-4">りんごを楽しむ習慣をサポートする、りんごティーなどを企画・販売しています。</p>
-                        <a href="product-tea.html" class="text-muted-red hover:underline font-medium text-sm">商品ページへ →</a>
+                        <p class="text-dark-gray text-sm md:text-base leading-relaxed mb-4">アップルティーなど、りんごを楽しむ習慣をサポートする商品を企画中です。</p>
+                        <p class="text-sm text-muted-red font-medium">準備中</p>
                     </div>
                 </article>
                 <article class="card-feature text-left">
                     <div class="flex-1 min-w-0">
                         <h3 class="text-xl font-bold text-brown mb-2">アプリ開発</h3>
-                        <p class="text-dark-gray text-sm md:text-base leading-relaxed mb-4">体調や習慣を無理なく記録できるアプリを開発中です（プロトタイプ公開）。</p>
-                        <a href="app-health.html" class="text-muted-red hover:underline font-medium text-sm">アプリページへ →</a>
+                        <p class="text-dark-gray text-sm md:text-base leading-relaxed mb-4">体調や習慣を無理なく記録できるアプリを開発中です。</p>
+                        <p class="text-sm text-muted-red font-medium">準備中</p>
                     </div>
                 </article>
             </div>
@@ -132,63 +134,55 @@
     </section>
 
     <!-- 記事 -->
-    <section id="articles" class="py-16 bg-off-white landing-band landing-band--a section-articles-stack">
-        <div class="max-w-3xl mx-auto px-6">
+    <section id="articles" class="py-16 bg-off-white landing-band landing-band--a">
+        <div class="max-w-6xl mx-auto px-6">
             <h2 class="text-3xl md:text-4xl font-bold text-brown text-center mb-4">記事</h2>
             <p class="text-center text-dark-gray mb-10 text-sm md:text-base">体験とエビデンスをまじえたレビュー・解説です。</p>
-            <div class="space-y-6 mb-10">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
                 <article class="article-card">
                     <a href="article-lava-review.html" aria-label="ホットヨガLAVAの記事を読む">
+                        <div class="aspect-video bg-gradient-to-br from-orange-100 to-red-100 rounded-lg mb-4 flex items-center justify-center overflow-hidden">
+                            <div class="text-7xl">🔥</div>
+                        </div>
                         <span class="badge">温活</span>
-                        <h3 class="!text-lg md:!text-xl">ホットヨガLAVAで冷え性は改善できる？管理栄養士が栄養学的に分析</h3>
-                        <p class="read-time">読了の目安：約8分</p>
+                        <h3>LAVA体験レビュー｜冷え性改善効果は？</h3>
+                        <p class="read-time">8分</p>
                     </a>
                 </article>
                 <article class="article-card">
                     <a href="article-yomogi-review.html" aria-label="よもぎ蒸しの記事を読む">
+                        <div class="aspect-video bg-gradient-to-br from-green-100 to-teal-100 rounded-lg mb-4 flex items-center justify-center overflow-hidden">
+                            <div class="text-7xl">🌿</div>
+                        </div>
                         <span class="badge">温活</span>
-                        <h3 class="!text-lg md:!text-xl">よもぎ蒸しで冷え性・むくみは改善する？管理栄養士の体験レビュー</h3>
-                        <p class="read-time">読了の目安：約10分</p>
+                        <h3>よもぎ蒸し体験｜冷え性・むくみに効く？</h3>
+                        <p class="read-time">10分</p>
                     </a>
                 </article>
                 <article class="article-card">
                     <a href="article-chef-tsukurioki.html" aria-label="無添つくりおきの記事を読む">
+                        <div class="aspect-video bg-gradient-to-br from-yellow-100 to-orange-100 rounded-lg mb-4 flex items-center justify-center overflow-hidden">
+                            <div class="text-7xl">🍽️</div>
+                        </div>
                         <span class="badge">食事</span>
-                        <h3 class="!text-lg md:!text-xl">シェフの無添つくりおきが忙しいママにおすすめな3つの理由</h3>
-                        <p class="read-time">読了の目安：約9分</p>
+                        <h3>無添つくりおき｜忙しいママに最適な理由</h3>
+                        <p class="read-time">9分</p>
+                    </a>
+                </article>
+                <article class="article-card">
+                    <a href="#" aria-label="冷え性改善！温活習慣5選の記事を読む">
+                        <div class="aspect-video bg-gradient-to-br from-pink-100 to-rose-100 rounded-lg mb-4 flex items-center justify-center overflow-hidden">
+                            <div class="text-7xl">💡</div>
+                        </div>
+                        <span class="badge">温活</span>
+                        <h3>冷え性改善！温活習慣5選</h3>
+                        <p class="read-time">5分</p>
                     </a>
                 </article>
             </div>
         </div>
     </section>
 
-    <!-- 商品ティーザー -->
-    <section class="py-16 bg-white landing-band landing-band--b" aria-label="商品のご案内">
-        <div class="max-w-3xl mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold text-brown text-center mb-6">商品</h2>
-            <div class="bg-white rounded-2xl p-8 shadow-sm">
-                <div class="text-center sm:text-left">
-                    <h3 class="text-xl font-bold text-brown mb-2">りんごティー</h3>
-                    <p class="text-dark-gray text-sm md:text-base mb-4">手軽にりんご習慣を取り入れたい方向けの自社商品です。</p>
-                    <a href="product-tea.html" class="btn-primary inline-block">詳しく見る</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- アプリティーザー -->
-    <section class="py-16 bg-off-white landing-band landing-band--a" aria-label="アプリのご案内">
-        <div class="max-w-3xl mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold text-brown text-center mb-6">アプリ</h2>
-            <div class="bg-white rounded-2xl p-8 shadow-sm">
-                <div class="text-center sm:text-left">
-                    <h3 class="text-xl font-bold text-brown mb-2">体調管理アプリ（プロトタイプ）</h3>
-                    <p class="text-dark-gray text-sm md:text-base mb-4">記録を続けやすい画面構成を試しています。</p>
-                    <a href="app-health.html" class="btn-primary inline-block">アプリページへ</a>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- プロフィール -->
     <section id="profile" class="py-16 bg-white landing-band landing-band--b">
@@ -206,11 +200,13 @@
         </div>
     </section>
 
-   
     <!-- フッター -->
     <footer class="bg-brown text-off-white py-12">
+        <div class="max-w-3xl mx-auto px-6">
+            <div class="text-center space-y-6">
                 <nav aria-label="フッターナビゲーション">
                     <ul class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm opacity-80">
+                        <li><a href="#profile" class="hover:text-muted-red transition">プロフィール</a></li>
                         <li><a href="#" class="hover:text-muted-red transition">プライバシーポリシー</a></li>
                         <li><a href="#" class="hover:text-muted-red transition">お問い合わせ</a></li>
                     </ul>
