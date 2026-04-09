@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>りんちゃん サンプル画像一覧</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            margin: 0;
+            background: var(--off-white);
+            color: var(--dark-gray);
+        }
+
+        .samples-wrap {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 48px 24px 80px;
+        }
+
+        .samples-header {
+            margin-bottom: 32px;
+            text-align: center;
+        }
+
+        .samples-header h1 {
+            margin-bottom: 12px;
+        }
+
+        .samples-header p {
+            margin: 0;
+            color: var(--color-text-secondary);
+        }
+
+        .samples-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+        }
+
+        .sample-card {
+            background: var(--color-bg-secondary);
+            border: 1px solid rgba(107, 68, 35, 0.08);
+            border-radius: 24px;
+            padding: 20px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .sample-card img {
+            display: block;
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            border-radius: 18px;
+            background: var(--cream);
+            margin-bottom: 16px;
+        }
+
+        .sample-card h2 {
+            font-size: 1rem;
+            margin-bottom: 8px;
+        }
+
+        .sample-card p {
+            margin: 0;
+            font-size: 0.875rem;
+            color: var(--color-text-secondary);
+            word-break: break-all;
+        }
+    </style>
+</head>
+<body>
+    <main class="samples-wrap">
+        <header class="samples-header">
+            <h1>りんちゃん サンプル画像一覧</h1>
+            <p>プロフィール / トップビジュアル候補の比較用ページ</p>
+        </header>
+
+        <section class="samples-grid">
+            <article class="sample-card">
+                <img src="images/sample/profile/image.png" alt="サンプル画像 1">
+                <h2>Sample 1</h2>
+                <p>images/sample/profile/image.png</p>
+            </article>
+
+            <article class="sample-card">
+                <img src="images/sample/profile/image copy.png" alt="サンプル画像 2">
+                <h2>Sample 2</h2>
+                <p>images/sample/profile/image copy.png</p>
+            </article>
+
+            <article class="sample-card">
+                <img src="images/sample/profile/image copy 2.png" alt="サンプル画像 3">
+                <h2>Sample 3</h2>
+                <p>images/sample/profile/image copy 2.png</p>
+            </article>
+
+            <article class="sample-card">
+                <img src="images/sample/profile/image copy 3.png" alt="サンプル画像 4">
+                <h2>Sample 4</h2>
+                <p>images/sample/profile/image copy 3.png</p>
+            </article>
+
+            <article class="sample-card">
+                <img src="images/sample/profile/image copy 4.png" alt="サンプル画像 5">
+                <h2>Sample 5</h2>
+                <p>images/sample/profile/image copy 4.png</p>
+            </article>
+
+            <article class="sample-card">
+                <img src="images/sample/profile/image copy 5.png" alt="サンプル画像 6">
+                <h2>Sample 6</h2>
+                <p>images/sample/profile/image copy 5.png</p>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

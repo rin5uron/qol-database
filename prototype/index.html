@@ -45,11 +45,14 @@
     <!-- ヒーロー -->
     <section class="hero-section pt-32 pb-16 bg-gradient-to-br from-cream to-off-white">
         <div class="max-w-3xl mx-auto px-6 text-center">
+            <div class="mb-8 flex justify-center">
+                <img src="images/profile.png" alt="りんごが好きな管理栄養士 りんちゃん" class="profile-image max-w-[180px] sm:max-w-[220px]" />
+            </div>
             <h1 class="text-4xl md:text-5xl font-bold text-brown mb-6 leading-tight">
-                整う生活は、<br>置くだけで始まる
+                暮らしの中に、<br>からだを整えるヒントを
             </h1>
             <p class="text-lg md:text-xl text-dark-gray mb-10 leading-relaxed">
-                管理栄養士りんちゃんが届ける、<br class="hidden sm:inline">1日1個のりんご習慣と、温活・美容のヒントです。
+                がんばれない日にも寄り添う、<br class="hidden sm:inline">やさしい整え方を届けます。
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-stretch sm:items-center">
                 <a href="#about" class="btn-primary-large sm:min-w-[200px]">
@@ -59,11 +62,6 @@
                     記事を読む
                 </a>
             </div>
-            <p class="mt-8">
-                <a href="#profile" class="text-brown underline hover:text-muted-red transition text-sm md:text-base">
-                    運営者情報
-                </a>
-            </p>
         </div>
     </section>
 
@@ -187,14 +185,40 @@
     <!-- プロフィール -->
     <section id="profile" class="py-16 bg-white landing-band landing-band--b">
         <div class="max-w-3xl mx-auto px-6">
-            <div class="flex flex-col items-center gap-8">
-                <img src="images/profile.png" alt="管理栄養士 りんちゃん" class="profile-image max-w-[240px] sm:max-w-[280px]" />
-                <div class="bg-off-white rounded-2xl p-8 w-full border border-brown/10">
-                    <h3 class="text-2xl font-bold text-brown mb-2 text-center sm:text-left">管理栄養士・りんちゃん</h3>
-                    <p class="text-muted-red mb-4 text-center sm:text-left text-sm">温活・美容栄養の専門家 / 管理栄養士（国家資格）</p>
-                    <p class="text-dark-gray leading-relaxed text-sm md:text-base">
-                        「私自身、冷え性で悩んでいました。温活と食事改善で体が変わった経験から、同じ悩みを持つ方に伝えたい。」
+            <div class="bg-off-white rounded-2xl p-8 border border-brown/10">
+                <div class="flex flex-col md:flex-row items-center md:items-start gap-8">
+                    <img src="images/profile.png" alt="管理栄養士 りんちゃん" class="profile-image w-full max-w-[220px] sm:max-w-[260px] md:max-w-[240px] shrink-0" />
+                    <div class="w-full">
+                    <p class="text-muted-red mb-3 text-center md:text-left text-sm">Character Profile</p>
+                    <h3 class="text-3xl font-bold text-brown mb-2 text-center md:text-left">管理栄養士りんちゃん</h3>
+                    <p class="text-dark-gray text-sm md:text-base text-center md:text-left mb-6">
+                        りんごと温活が好きな、整え方の案内人
                     </p>
+                    <dl class="space-y-4 text-sm md:text-base text-dark-gray">
+                        <div class="flex flex-col sm:flex-row sm:items-start sm:gap-4">
+                            <dt class="font-bold text-brown sm:w-28 shrink-0">名前</dt>
+                            <dd>りんちゃん</dd>
+                        </div>
+                        <div class="flex flex-col sm:flex-row sm:items-start sm:gap-4">
+                            <dt class="font-bold text-brown sm:w-28 shrink-0">職業</dt>
+                            <dd>管理栄養士</dd>
+                        </div>
+                        <div class="flex flex-col sm:flex-row sm:items-start sm:gap-4">
+                            <dt class="font-bold text-brown sm:w-28 shrink-0">好きなもの</dt>
+                            <dd><span class="inline-flex rounded-full bg-white px-3 py-1 border border-brown/10">りんご</span></dd>
+                        </div>
+                        <div class="flex flex-col sm:flex-row sm:items-start sm:gap-4">
+                            <dt class="font-bold text-brown sm:w-28 shrink-0">趣味</dt>
+                            <dd class="flex flex-wrap gap-2">
+                                <span class="inline-flex rounded-full bg-white px-3 py-1 border border-brown/10">サウナ</span>
+                                <span class="inline-flex rounded-full bg-white px-3 py-1 border border-brown/10">よもぎ蒸し</span>
+                            </dd>
+                        </div>
+                    </dl>
+                    <p class="text-dark-gray leading-relaxed text-sm md:text-base mt-6 mb-0">
+                        がんばれない日にも、暮らしの中で続けやすい整え方を一緒に探していきます。
+                    </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -206,7 +230,7 @@
             <div class="text-center space-y-6">
                 <nav aria-label="フッターナビゲーション">
                     <ul class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm opacity-80">
-                        <li><a href="#profile" class="hover:text-muted-red transition">プロフィール</a></li>
+                        <li><a href="#" class="hover:text-muted-red transition">運営者情報</a></li>
                         <li><a href="#" class="hover:text-muted-red transition">プライバシーポリシー</a></li>
                         <li><a href="#" class="hover:text-muted-red transition">お問い合わせ</a></li>
                     </ul>
