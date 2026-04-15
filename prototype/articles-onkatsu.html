@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>温活の記事一覧 | リンゴラボ（仮）</title>
+    <meta name="description" content="管理栄養士りんちゃんが、ホットヨガ・よもぎ蒸し・サウナなど温活に関する記事をお届けします。">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-off-white text-dark-gray">
+
+    <!-- ナビゲーション -->
+    <nav class="bg-white shadow-sm fixed w-full z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2" aria-label="リンゴラボ トップページへ">
+                <img src="images/logo.svg" alt="リンゴラボ ロゴ" class="h-10" />
+            </a>
+
+            <div class="hidden md:flex space-x-6 items-center text-sm font-medium">
+                <a href="index.html#about" class="text-dark-gray hover:text-muted-red transition" aria-label="リンゴラボについて">リンゴラボについて</a>
+                <a href="product-tea.html" class="text-dark-gray hover:text-muted-red transition" aria-label="商品">商品</a>
+                <a href="app-health.html" class="text-dark-gray hover:text-muted-red transition" aria-label="アプリ">アプリ</a>
+                <a href="articles.html" class="btn-primary" aria-label="記事を読む">記事を読む</a>
+            </div>
+
+            <button id="mobile-menu-button" class="md:hidden text-2xl text-dark-gray" aria-label="メニューを開く" aria-expanded="false">
+                ☰
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <div class="container mx-auto px-6 py-4 flex flex-col space-y-4">
+                <a href="index.html#about" class="text-dark-gray hover:text-muted-red transition" aria-label="リンゴラボについて">リンゴラボについて</a>
+                <a href="product-tea.html" class="text-dark-gray hover:text-muted-red transition" aria-label="商品">商品</a>
+                <a href="app-health.html" class="text-dark-gray hover:text-muted-red transition" aria-label="アプリ">アプリ</a>
+                <a href="articles.html" class="btn-primary text-center" aria-label="記事を読む">記事を読む</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- メインコンテンツ -->
+    <main class="pt-32 pb-16">
+        <div class="max-w-6xl mx-auto px-6">
+            <!-- ページタイトル -->
+            <div class="text-center mb-12">
+                <h1 class="text-4xl md:text-5xl font-bold text-brown mb-4">温活の記事</h1>
+                <p class="text-lg text-dark-gray">ホットヨガ・よもぎ蒸し・サウナなど、体を温める習慣を紹介します。</p>
+            </div>
+
+            <!-- カテゴリフィルター -->
+            <nav class="flex justify-center gap-4 mb-12 flex-wrap" aria-label="カテゴリフィルター">
+                <a href="articles.html" class="category-filter-btn">すべて</a>
+                <a href="articles-onkatsu.html" class="category-filter-btn active">温活</a>
+                <a href="articles-food.html" class="category-filter-btn">食事</a>
+                <a href="articles-beauty.html" class="category-filter-btn">美容</a>
+            </nav>
+
+            <!-- 記事グリッド -->
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-8 mb-12">
+                <article class="article-card">
+                    <a href="article-lava-review.html" aria-label="ホットヨガLAVAの記事を読む">
+                        <div class="aspect-video rounded-lg mb-4 overflow-hidden">
+                            <img src="images/imagephoto/yoga.jpg" alt="ホットヨガLAVA体験レビュー" class="w-full h-full object-cover">
+                        </div>
+                        <span class="badge">温活</span>
+                        <h2>LAVA体験レビュー｜冷え性改善効果は？</h2>
+                        <p class="read-time">8分</p>
+                    </a>
+                </article>
+                <article class="article-card">
+                    <a href="article-yomogi-review.html" aria-label="よもぎ蒸しの記事を読む">
+                        <div class="aspect-video rounded-lg mb-4 overflow-hidden">
+                            <img src="images/imagephoto/yomogi.jpg" alt="よもぎ蒸し体験レビュー" class="w-full h-full object-cover">
+                        </div>
+                        <span class="badge">温活</span>
+                        <h2>よもぎ蒸し体験｜冷え性・むくみに効く？</h2>
+                        <p class="read-time">10分</p>
+                    </a>
+                </article>
+                <article class="article-card">
+                    <a href="#" aria-label="冷え性改善！温活習慣5選の記事を読む">
+                        <div class="aspect-video rounded-lg mb-4 overflow-hidden">
+                            <img src="images/imagephoto/gingertea.jpg" alt="冷え性改善！温活習慣5選" class="w-full h-full object-cover">
+                        </div>
+                        <span class="badge">温活</span>
+                        <h2>冷え性改善！温活習慣5選</h2>
+                        <p class="read-time">5分</p>
+                    </a>
+                </article>
+            </div>
+
+            <!-- ページネーション（準備中） -->
+            <!--
+            <nav class="flex justify-center gap-2" aria-label="ページネーション">
+                <a href="#" class="px-4 py-2 bg-white rounded hover:bg-cream transition">1</a>
+                <a href="#" class="px-4 py-2 bg-white rounded hover:bg-cream transition">2</a>
+                <a href="#" class="px-4 py-2 bg-white rounded hover:bg-cream transition">3</a>
+            </nav>
+            -->
+        </div>
+    </main>
+
+    <!-- フッター -->
+    <footer class="bg-brown text-off-white py-12">
+        <div class="max-w-3xl mx-auto px-6">
+            <div class="text-center space-y-6">
+                <nav aria-label="フッターナビゲーション">
+                    <ul class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm opacity-80">
+                        <li><a href="#" class="hover:text-muted-red transition">運営者情報</a></li>
+                        <li><a href="#" class="hover:text-muted-red transition">プライバシーポリシー</a></li>
+                        <li><a href="#" class="hover:text-muted-red transition">お問い合わせ</a></li>
+                    </ul>
+                </nav>
+
+                <p class="text-center text-xs opacity-60">© 2026 Studio Jinsei. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+            if (isExpanded) {
+                mobileMenu.classList.add('hidden');
+                mobileMenuButton.setAttribute('aria-expanded', 'false');
+                mobileMenuButton.setAttribute('aria-label', 'メニューを開く');
+                mobileMenuButton.innerHTML = '☰';
+            } else {
+                mobileMenu.classList.remove('hidden');
+                mobileMenuButton.setAttribute('aria-expanded', 'true');
+                mobileMenuButton.setAttribute('aria-label', 'メニューを閉じる');
+                mobileMenuButton.innerHTML = '✕';
+            }
+        });
+
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenuButton.setAttribute('aria-expanded', 'false');
+                    mobileMenuButton.setAttribute('aria-label', 'メニューを開く');
+                    mobileMenuButton.innerHTML = '☰';
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

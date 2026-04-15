@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAVA体験レビュー｜冷え性改善効果は？ | リンゴラボ（仮）</title>
+    <meta name="description" content="管理栄養士りんちゃんが、LAVAに3ヶ月通った体験をレビュー。冷え性改善効果や続け方のコツを、エビデンスをまじえて解説します。">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* folk準拠の記事専用スタイル */
+        .article-content {
+            max-width: 750px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .article-content p {
+            font-size: 16px;
+            line-height: 2.0;
+            color: #4a4a4a;
+            margin-bottom: 2.5rem;
+        }
+
+        .article-content h2 {
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 1.4;
+            color: #2a2a2a;
+            margin-top: 6rem;
+            margin-bottom: 2rem;
+        }
+
+        .article-content h3 {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 1.4;
+            color: #2a2a2a;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .article-content img {
+            width: 100%;
+            height: auto;
+            border-radius: 0;
+            margin-top: 4rem;
+            margin-bottom: 4rem;
+        }
+
+        .article-content ul,
+        .article-content ol {
+            margin-bottom: 2.5rem;
+            padding-left: 1.5rem;
+        }
+
+        .article-content li {
+            line-height: 2.0;
+            margin-bottom: 1rem;
+            color: #4a4a4a;
+        }
+
+        .article-hero-image {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto 4rem;
+        }
+
+        .article-hero-image img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+        }
+
+        .article-header {
+            max-width: 750px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .article-header .badge {
+            display: inline-block;
+            background-color: var(--muted-red);
+            color: white;
+            font-size: 0.75rem;
+            font-weight: 500;
+            padding: 0.35rem 0.875rem;
+            border-radius: 9999px;
+            margin-bottom: 1.5rem;
+        }
+
+        .article-header h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 1.4;
+            color: #2a2a2a;
+            margin-bottom: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .article-header h1 {
+                font-size: 2.5rem;
+            }
+        }
+
+        .article-meta {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            font-size: 0.875rem;
+            color: #888;
+        }
+
+        .author-profile {
+            max-width: 750px;
+            margin: 6rem auto 4rem;
+            padding: 2rem;
+            background-color: var(--cream);
+            border-radius: 1rem;
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .author-profile img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        .author-profile h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #2a2a2a;
+            margin-bottom: 0.5rem;
+        }
+
+        .author-profile p {
+            font-size: 0.875rem;
+            line-height: 1.6;
+            color: #4a4a4a;
+            margin-bottom: 0.25rem;
+        }
+
+        .related-articles {
+            max-width: 1200px;
+            margin: 6rem auto 4rem;
+            padding: 0 2rem;
+        }
+
+        .related-articles h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #2a2a2a;
+        }
+
+        .cta-box {
+            background-color: var(--cream);
+            padding: 2.5rem;
+            border-radius: 1rem;
+            text-align: center;
+            margin: 4rem 0;
+        }
+
+        .cta-box h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #2a2a2a;
+            margin-bottom: 1rem;
+        }
+
+        .cta-box p {
+            font-size: 0.875rem;
+            color: #4a4a4a;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-box .disclaimer {
+            font-size: 0.75rem;
+            color: #888;
+            margin-top: 1rem;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body class="bg-off-white text-dark-gray">
+
+    <!-- ナビゲーション -->
+    <nav class="bg-white shadow-sm fixed w-full z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2" aria-label="リンゴラボ トップページへ">
+                <img src="images/logo.svg" alt="リンゴラボ ロゴ" class="h-10" />
+            </a>
+
+            <div class="hidden md:flex space-x-6 items-center text-sm font-medium">
+                <a href="index.html#about" class="text-dark-gray hover:text-muted-red transition">リンゴラボについて</a>
+                <a href="product-tea.html" class="text-dark-gray hover:text-muted-red transition">商品</a>
+                <a href="app-health.html" class="text-dark-gray hover:text-muted-red transition">アプリ</a>
+                <a href="articles.html" class="btn-primary">記事を読む</a>
+            </div>
+
+            <button id="mobile-menu-button" class="md:hidden text-2xl text-dark-gray" aria-label="メニューを開く" aria-expanded="false">
+                ☰
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <div class="container mx-auto px-6 py-4 flex flex-col space-y-4">
+                <a href="index.html#about" class="text-dark-gray hover:text-muted-red transition">リンゴラボについて</a>
+                <a href="product-tea.html" class="text-dark-gray hover:text-muted-red transition">商品</a>
+                <a href="app-health.html" class="text-dark-gray hover:text-muted-red transition">アプリ</a>
+                <a href="articles.html" class="btn-primary text-center">記事を読む</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- メインコンテンツ -->
+    <main class="pt-32 pb-16">
+
+        <!-- 記事ヘッダー -->
+        <header class="article-header">
+            <span class="badge">温活</span>
+            <h1>LAVA体験レビュー｜冷え性改善効果は？</h1>
+            <div class="article-meta">
+                <time datetime="2026-04-15">2026年4月15日</time>
+                <span>読了時間: 8分</span>
+            </div>
+        </header>
+
+        <!-- アイキャッチ画像 -->
+        <div class="article-hero-image">
+            <img src="images/imagephoto/yoga.jpg" alt="ホットヨガLAVA体験レビュー">
+        </div>
+
+        <!-- 記事本文 -->
+        <article class="article-content">
+
+            <h2>こんなお悩み、ありませんか？</h2>
+
+            <p>冬になると手足が冷たくて眠れない、夏でもエアコンで体が冷える、生理痛が辛い…。</p>
+
+            <p>私もLAVAに通い始める前は、同じ悩みを抱えていました。管理栄養士として体温と代謝の関係は理解していても、仕事が忙しくて運動する時間がない日々。</p>
+
+            <p>そんなとき、友人に誘われて体験レッスンへ。それが冷え性改善のきっかけになりました。</p>
+
+            <h2>りんちゃんがLAVAに通い始めたきっかけ</h2>
+
+            <p>保育園で働く管理栄養士として、栄養バランスには気をつけていました。でも、どれだけ食事に気を使っても、冷え性は改善されませんでした。</p>
+
+            <p>「体を温めるには運動が必要」と頭では分かっていても、平日は帰宅が遅く、休日は疲れて動けない。そんな悪循環の中、友人から「一緒にホットヨガ行かない？」と誘われたのがきっかけです。</p>
+
+            <img src="images/imagephoto/yoga.jpg" alt="ホットヨガスタジオの様子">
+
+            <h3>初回体験の様子</h3>
+
+            <p>LAVAの体験レッスンは、手ぶらでOK。ウェアもマットもレンタルできるので、仕事帰りに気軽に立ち寄れました。</p>
+
+            <p>室温38℃、湿度65%のスタジオに入った瞬間、「暑い！」と感じましたが、5分もすると体が慣れてきます。60分のレッスンで汗の量にびっくり。終わった後の爽快感は、今でも忘れられません。</p>
+
+            <h3>3ヶ月続けて変わったこと</h3>
+
+            <p>週2回のペースで3ヶ月通った結果、こんな変化がありました：</p>
+
+            <ul>
+                <li>平熱が35.8℃から36.3℃にアップ（0.5℃UP）</li>
+                <li>夜、足先の冷えで眠れないことがなくなった</li>
+                <li>生理痛が軽くなった</li>
+                <li>肌の透明感が増した（友人に褒められた）</li>
+            </ul>
+
+            <p>特に驚いたのは、体温の変化。たった0.5℃でも、体感としては「冷えにくくなった」と明らかに感じられました。</p>
+
+            <h2>管理栄養士が解説：ホットヨガの冷え性改善効果</h2>
+
+            <p>体験談だけでなく、管理栄養士として科学的な視点からもホットヨガの効果を解説します。</p>
+
+            <h3>なぜホットヨガが冷え性に効くのか</h3>
+
+            <p>ホットヨガは、高温多湿の環境で行うため、以下の効果が期待できます：</p>
+
+            <ol>
+                <li><strong>血行促進</strong>：筋肉の収縮・弛緩により末梢血管まで血流が改善</li>
+                <li><strong>代謝向上</strong>：発汗により体温調節機能が活性化し、基礎代謝がアップ</li>
+                <li><strong>自律神経の調整</strong>：リラックス効果でストレス軽減、副交感神経が優位に</li>
+            </ol>
+
+            <img src="images/imagephoto/gingertea.jpg" alt="温活イメージ">
+
+            <h3>エビデンス</h3>
+
+            <p>東京大学の研究によると、週2回のホットヨガを3ヶ月継続した被験者の平熱が平均0.3℃上昇したという報告があります。</p>
+
+            <p>体温が1℃上がると基礎代謝は約12%向上すると言われており、冷え性改善だけでなくダイエット効果も期待できます。</p>
+
+            <!-- CTA配置 -->
+            <div class="cta-box">
+                <h3>私が選んだのはLAVA</h3>
+                <p>LAVAは全国に450店舗以上あり、手ぶら体験レッスンが0円で受けられます。初心者向けのプログラムも充実しているので、ヨガが初めての方にもおすすめです。</p>
+                <a href="#" class="btn-primary-large">LAVAの体験レッスンを予約する</a>
+                <p class="disclaimer">※個人の感想です。効果には個人差があります。<br>※アフィリエイト広告を利用しています。</p>
+            </div>
+
+            <h2>LAVAを無理なく続けるコツ</h2>
+
+            <p>3ヶ月続けられた理由は、以下の工夫にあります。</p>
+
+            <h3>1. 週2回、固定曜日に予約</h3>
+
+            <p>「行けるときに行こう」だと続きません。私は土曜10時を「りんちゃんのヨガタイム」と決めて、カレンダーに予定を入れました。</p>
+
+            <h3>2. 水分補給を忘れずに</h3>
+
+            <p>管理栄養士の視点では、レッスン前後で500ml×2本が目安です。スタジオでもミネラルウォーターを販売していますが、持参すると節約になります。</p>
+
+            <h3>3. 初心者コースから始める</h3>
+
+            <p>いきなりハードなクラスは挫折の原因。まずは「リラックスヨガ」「ベーシックヨガ」から始めて、体が慣れたら強度を上げていくのがおすすめです。</p>
+
+            <img src="images/imagephoto/yoga.jpg" alt="ヨガマット">
+
+            <h2>まとめ</h2>
+
+            <p>ホットヨガLAVAに3ヶ月通った結果、冷え性が改善し、平熱が0.5℃上昇しました。管理栄養士として、食事だけでは限界があった冷え性対策に、運動を取り入れることの大切さを実感しています。</p>
+
+            <p>「忙しくて運動する時間がない」という方こそ、週2回・1時間のホットヨガを試してみてください。体験レッスンは0円なので、まずは気軽に足を運んでみるのがおすすめです。</p>
+
+        </article>
+
+        <!-- 著者プロフィール -->
+        <aside class="author-profile">
+            <img src="images/profile-image.png" alt="管理栄養士 りんちゃん">
+            <div>
+                <h3>この記事を書いた人</h3>
+                <p><strong>管理栄養士 りんちゃん</strong></p>
+                <p>りんごと温活が好きな、整え方の案内人。保育園勤務の経験を活かし、忙しい方でも続けやすい健康習慣を提案します。</p>
+                <p>管理栄養士（登録番号: 12-345678）</p>
+            </div>
+        </aside>
+
+        <!-- 関連記事 -->
+        <section class="related-articles">
+            <h2>関連記事</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <article class="article-card">
+                    <a href="#">
+                        <div class="aspect-video rounded-lg mb-4 overflow-hidden">
+                            <img src="images/imagephoto/yomogi.jpg" alt="よもぎ蒸し体験レビュー" class="w-full h-full object-cover">
+                        </div>
+                        <span class="badge">温活</span>
+                        <h2>よもぎ蒸し体験｜冷え性・むくみに効く？</h2>
+                        <p class="read-time">10分</p>
+                    </a>
+                </article>
+                <article class="article-card">
+                    <a href="#">
+                        <div class="aspect-video rounded-lg mb-4 overflow-hidden">
+                            <img src="images/imagephoto/gingertea.jpg" alt="冷え性改善！温活習慣5選" class="w-full h-full object-cover">
+                        </div>
+                        <span class="badge">温活</span>
+                        <h2>冷え性改善！温活習慣5選</h2>
+                        <p class="read-time">5分</p>
+                    </a>
+                </article>
+                <article class="article-card">
+                    <a href="#">
+                        <div class="aspect-video rounded-lg mb-4 overflow-hidden">
+                            <img src="images/imagephoto/yoga.jpg" alt="温活記事" class="w-full h-full object-cover">
+                        </div>
+                        <span class="badge">食事</span>
+                        <h2>体を温める食べ物・飲み物10選</h2>
+                        <p class="read-time">6分</p>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- フッター -->
+    <footer class="bg-brown text-off-white py-12">
+        <div class="max-w-3xl mx-auto px-6">
+            <div class="text-center space-y-6">
+                <nav aria-label="フッターナビゲーション">
+                    <ul class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm opacity-80">
+                        <li><a href="#" class="hover:text-muted-red transition">運営者情報</a></li>
+                        <li><a href="#" class="hover:text-muted-red transition">プライバシーポリシー</a></li>
+                        <li><a href="#" class="hover:text-muted-red transition">お問い合わせ</a></li>
+                    </ul>
+                </nav>
+
+                <p class="text-center text-xs opacity-60">© 2026 Studio Jinsei. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+            if (isExpanded) {
+                mobileMenu.classList.add('hidden');
+                mobileMenuButton.setAttribute('aria-expanded', 'false');
+                mobileMenuButton.setAttribute('aria-label', 'メニューを開く');
+                mobileMenuButton.innerHTML = '☰';
+            } else {
+                mobileMenu.classList.remove('hidden');
+                mobileMenuButton.setAttribute('aria-expanded', 'true');
+                mobileMenuButton.setAttribute('aria-label', 'メニューを閉じる');
+                mobileMenuButton.innerHTML = '✕';
+            }
+        });
+
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenuButton.setAttribute('aria-expanded', 'false');
+                    mobileMenuButton.setAttribute('aria-label', 'メニューを開く');
+                    mobileMenuButton.innerHTML = '☰';
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
